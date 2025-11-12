@@ -39,9 +39,9 @@
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Jason Ho" department="Mechanical Engineering"
+      <team-member avatar="assets/Jason.png" name="Jason Ho" department="Mechanical Engineering"
         year="25/26"></team-member>
-      <team-member avatar="assets/yellowranger.png" name="Quek Fang Chen" department="Mechanical Engineering"
+      <team-member avatar="assets/fc.png" name="Quek Fang Chen" department="Mechanical Engineering"
         year="25/26"></team-member>
 
     </div>
@@ -98,6 +98,8 @@
         <p>
           Robots are increasingly used to relieve labour shortages and handle repetitive tasks across sectors like warehousing, healthcare, and hospitality. This is accelerating a shift from factory-only deployment to human-centric environments, with robots taking on point-to-point delivery and routine workflows.
         </p>
+        <image-component tag="image" source="assets/articles.png"
+          subtitle="Fig 1: A collage of articles showing an increasing interest in Warehouse Automation"></image-component>
         <p>
           The team had an interest in knowing where the National University of Singapore benefit can from such a system. To explore this, the team decided to choose the Innovation and Design Hub as the testing ground. 
         </p>
@@ -112,17 +114,72 @@
         <p>
           Before starting any design of the system, the team needed to understand the space and operations within the Hub. 3 distinct areas were noted down, and these are the Tinkering Corner, Sandbox and ILounge. 
         </p>
+        <image-component tag="image" source="assets/FloorPlan.png"
+          subtitle="Fig 2: Floor Plan of the Hub"></image-component>
 
       <div id="sub-section-1-header-3">
-        <h3>1.3 Sub-Section Header 3</h3>
+        <h3>1.2.1 Tinkering Corner</h3>
         <p>
-          This is a test
+          The Tinkering Corner is where staff and students have access to machines to do fabrication such as 3D printing and laser cutting. The space is also utilised for classes and workshops. 
         </p>
 
         <!-- This is an example of how you might use the image component -->
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Image 1: iDP suggested pathway"></image-component>
+        <image-component tag="image" source="assets/tinkcorner.png"
+          subtitle="Fig 3: iDP suggested pathway"></image-component>
+
       </div>
+      <div id="sub-section-1-header-4">
+        <h3>1.2.2 Sandbox</h3>
+        <p>
+          The Sandbox is the ‘classroom’ area of the Hub. It is frequently booked for events, classes and workshops. Students also come here to study or have discussions. 
+        </p>
+        <image-component tag="image" source="assets/Sandbox.png"
+          subtitle="Fig 4: Floor Plan of the Hub"></image-component>
+      </div>
+
+      <div id="sub-section-1-header-5">
+        <h3>1.2.3 ILounge</h3>
+        <p>
+          Like Sandbox, this space is used for classes and discussion amongst students. 
+        </p>
+        <image-component tag="image" source="assets/ILounge.png"
+          subtitle="Fig 4: Floor Plan of the Hub"></image-component>
+      </div>
+
+      <div id="sub-section-1-header-5">
+        <h3>1.3 Stakeholders</h3>
+        <p>
+          The project involves the IDP Technical Staff, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the IDP Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
+        </p>
+        <image-component tag="image" source="assets/Nulle.png"
+          subtitle="Fig 4: Yee Teng Here"></image-component>
+      </div>
+
+      <div id="sub-section-1-header-6">
+        <h3>1.4 User Survey</h3>
+        <p>
+          User surveys conducted by the team were to collect information such as the taskings that the staff members need to conduct daily, the frequency of each task and their thoughts on how to improve their current workload. 
+        </p>
+        <image-component tag="image" source="assets/UserSurvey.png"
+          subtitle="Fig 5: User Survey on tasks done"></image-component>
+
+        <p>
+          Additional info from the staff mentioned that even a single-item pickup is disruptive: components and tools are scattered across the Hub, and requests often arrive while they’re busy, forcing them to pause their work or make students wait. They also noted that students leave used items piled on a table for staff to sort and restock before the 6 pm close, creating a rushed end-of-day process. 
+        </p>
+
+        <p>
+          To gain further insights into the work that the staff need to handle, we observed the daily footfall of the Hub’s space for the span of a month alongside gathering historical data of other major work that the staff must handle. 
+        </p>
+        <image-component tag="image" source="assets/Avgfootfall.png"
+          subtitle="Fig 6: Average daily footfall of the Hub from opening to closing"></image-component>
+        <image-component tag="image" source="assets/graphs.png"
+          subtitle="Fig 7: Graphs showing the rise in both bookings and fabrication hours that the staff must handle."></image-component>
+
+      </div>
+      
+
+
+      
     </div>
 
 
@@ -227,6 +284,8 @@
         </table-component>
       </div>
     </div>
+
+    
 
     <!-- This is an example of how you can use the references component to create references -->
     <div id="references" class="references">
