@@ -268,47 +268,8 @@
         </p>
       </div>
 
-      <div id="sub-section-1-header-16">
-        <h3>1.11.0 AMR Unit</h3>
-        <image-component tag="image" source="assets/amr.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
-        <p>
-          For the AMR base, we were provided with the Sesto Magnus Lite. It has the following capabilities:
-        </p>
-        <p>
-          - 100kg maximum payload capacity
-        </p>
-        <p>
-          -	Autonomous navigation 
-        </p>
-        <p>
-          -	Differential drive wheelbase 
-        </p>
-      </div>
-
-      <div id="sub-section-1-header-17">
-        <h3>1.12.0 Cobot Unit</h3>
-        <image-component tag="image" source="assets/cobot.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
-        <p>
-          For the Cobot, we used the Mitsubishi Electric RV-5AS Cobot Arm. It has the following capabilities:
-        </p>
-        <p>
-          -	5kg maximum payload capacity
-        </p>
-        <p>
-          -	Reach of 910mm
-        </p>
-        <p>
-          -	Positional accuracy of ±0.03mm
-        </p>
-        <p>
-          -	ROS2 driver availability
-        </p>
-      </div>
-
       <div id="sub-section-1-header-18">
-        <h3>1.13.0 Subsystem Identification</h3>
+        <h3>1.11.0 Subsystem Identification</h3>
         <p>
           Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
         </p>
@@ -319,14 +280,9 @@
       </div>
 
       <div id="sub-section-1-header-18">
-        <h3>1.14.0 Work Allocation</h3>
-        <p>
-          Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
-        </p>
-        <image-component tag="image" source="assets/sub1.png"
+        <h3>1.12.0 Work Allocation</h3>
+        <image-component tag="image" source="assets/workalloc.png"
           subtitle="Fig 4: Subsystems Part 1"></image-component>
-          <image-component tag="image" source="assets/sub2.png"
-          subtitle="Fig 4: Subsystems Part 2"></image-component>
       </div>
       
 
@@ -393,45 +349,134 @@
       <div id="section-header-2">
         <h2>3. Mechanical Subsystem - End-Effector</h2>
         <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+          To design the End Effectors for the system, design constraints must be established in terms of the actuation mode of choice, overall maximum size and the maximum mass before further analysis on the approach can be done. 
         </p>
       </div>
 
       <div id="sub-section-2-header-1">
-        <h3>2.1. Sub-section Header 1</h3>
+        <h3>3.1 Actuation mode</h3>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          To narrow down the ideal Actuation mode for the system, we evaluated the main types of actuation methods against various criteria for the system through the Concept Screening technique. 
         </p>
-
-        <!-- This is an example of how you might use the video component -->
+        <image-component tag="image" source="assets/ActMode.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          <p>
+          Based on the limitations of the payload of the AMR unit and space constraints within the body to fit all the components, the Hardware Requirements section was listed with higher weightage. Based on the concept screening and understanding of our system, we decided to choose the electric actuation mode for the design of the end-effector. 
+        </p>
       </div>
 
       <div id="sub-section-2-header-2">
-        <h3>2.2. Sub-section Header 2</h3>
+        <h3>3.2 Size and Mass Constraints</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+          The size and mass constraints of the system are decided by the following factors:
         </p>
+        <p>
+          Cobot End Effector Payload Capacity: 5kg
+        </p>
+        <p>
+          Ideal end effector centre of gravity: Within 135mm from the end connection of J6, max width of 200mm.
+        </p>
+        <p>
+          Allocated space on the robot structure: 600mm x 135mm x 200mm
+        </p>
+        <image-component tag="image" source="assets/manspace.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+      </div>
+      <div id="sub-section-2-header-2">
+        <h3>3.3 End Effector Analysis (Task 1: Tool pick and place)</h3>
+        <p>
+          Based on the task requirements specified, one of the end effectors would need to interact with the various tools specified on the pegboard. To get an understanding on the size and mass of the tools that the end effector must grab, the team measured and obtained the relevant data to fix our design requirements. 
+        </p>
+        <image-component tag="image" source="assets/collagetools.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+        <image-component tag="image" source="assets/summdatapoints.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+      </div>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+      <div id="sub-section-2-header-2">
+        <h4>3.3.1 Design challenges</h4>
+        <p>
+          Between the various tools, the clamping interface must securely hold varying non-linear surfaces, with material contact surfaces varying across tools (plastic, rubber, steel), each having a different coefficient of friction which impacts the clamping force.
+        </p>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h3>3.4 End Effector Design</h3>
+        <p>
+          With the design constraints known, design specifications for both the gripper and tool changer unit are specified.
+        </p>
+        <image-component tag="image" source="assets/endeffds.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h3>3.5 Grippers</h3>
+        <p>
+          To choose the ideal gripper mechanisms, the team used a concept screening chart to evaluate different designs against key metrics.
+        </p>
+        <image-component tag="image" source="assets/grippercc.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+        <p>
+          Based on the metric scoring, the rack and pinion and lead screw approach were both chosen to further prototype and explore.
+        </p>
+        <p>
+          To avoid excessive contact forces onto a singular contact point, the team decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
+        </p> 
+        <image-component tag="image" source="assets/null.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>   
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h3>3.6 Tool Changers</h3>
+        <p>
+          As the system will be interacting with various tools, a singular gripper design may be unable to carry or support all types of objects. As a result, the team aims to implement a tool changing system onboard the Cobot to facilitate end-effector changes. Due to the actuation mode being limited to being electric, the team narrowed down 3 concepts that can be explored and evaluated those against metrics.
+        </p>
+        <image-component tag="image" source="assets/toolcc.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+        <p>
+          Due to the limited space and mass constraints on the system, the Compactness/Weight criterion was weighted highly. Based on the scoring, the Permanent Electromagnet was chosen to be the concept to be explored further.
+        </p>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h3>3.7 Prototypes</h3>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h4>3.7.1 Gripper</h4>
+        <p>
+          Before analysis can be done, an approximate normal force acting on the gripper jaw was established at 10N based on supporting a load of 15N with rubber contact against metal at a coefficient of friction of 0.69. 
+        </p>
+        <p>
+          To test the Fin Ray design, an inspired gripper was designed and simulated it in SolidWorks via Nonlinear analysis, using TPU-85A as the material. The goal of the analysis was to locate the ideal gripping section that will allow the gripper to wrap around the object.
+        </p>
+        <image-component tag="image" source="assets/gripperdefor.png"
+          subtitle="Figure 17: Nonlinear Analysis of the deformation of a custom Fin-Ray Gripper Finger from TPU-85A (Deformation Scale: 1)"></image-component>
+        <p>
+          To test the Rack and Pinion concept with the Fin Ray gripper fingers, I built a 3D-printed prototype using PLA with TPU-85A for the fingers to test the deformation and gripping strength.
+        </p>
+        <image-component tag="image" source="assets/PrototypeGrip.png"
+          subtitle="Figure : Prototype Gripper to test concept"></image-component>
+        <image-component tag="image" source="assets/protoexploded.png"
+          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+        <p>
+          Since this is a prototype, I designed it with parts that facilitate easy swapping of finger geometries to test clamping force. Initial tests showed favourable results in carrying objects up to 900g. Further test will be conducted to validate different gripper profiles and geometries.
+        </p>
+      </div>
+
+      <div id="sub-section-2-header-2">
+        <h4>3.7.2 Tool Changer</h4>
+        <p>
+          To test the permanent electromagnet concept, calculations were performed on the type of electromagnet used, the corresponding magnetic material to maximise the magnetic attraction between the magnet and electromagnet.
+        </p>
+        <p>
+          The electromagnet use was a permanent electromagnet with a 24V demagnetisation input with 30kg rated strength. For the magnetic material, S275 Ferritic Steel was chosen with 6mm thickness to maximise the magnetic field.
+        </p>
+        <p>
+          Current tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
+        </p>
+        <image-component tag="image" source="assets/Magnet.png"
+          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
       </div>
     </div>
 
