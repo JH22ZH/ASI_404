@@ -146,7 +146,7 @@
           subtitle="Fig 4: Floor Plan of the Hub"></image-component>
       </div>
 
-      <div id="sub-section-1-header-5">
+      <div id="sub-section-1-header-6">
         <h3>1.3 Stakeholders</h3>
         <p>
           The project involves the IDP Technical Staff, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the IDP Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
@@ -155,7 +155,7 @@
           subtitle="Fig 4: Yee Teng Here"></image-component>
       </div>
 
-      <div id="sub-section-1-header-6">
+      <div id="sub-section-1-header-7">
         <h3>1.4 User Survey</h3>
         <p>
           User surveys conducted by the team were to collect information such as the taskings that the staff members need to conduct daily, the frequency of each task and their thoughts on how to improve their current workload. 
@@ -175,6 +175,158 @@
         <image-component tag="image" source="assets/graphs.png"
           subtitle="Fig 7: Graphs showing the rise in both bookings and fabrication hours that the staff must handle."></image-component>
 
+      </div>
+
+      <div id="sub-section-1-header-8">
+        <h3>1.5 Problem description</h3>
+        <p>
+          To ascertain the problems further, we drafted up a problem identification table utilising the 5W1H template. 
+        </p>
+        <image-component tag="image" source="assets/5W1h.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        
+        <p>
+          Staff surveys and observations show a consistent strain in balancing time-critical tasks with student support. Accordingly, we framed a problem statement that captures these operational challenges faced by Hub staff.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-9">
+        <h3>1.6 Problem Statement</h3>
+        <p>
+          Several redundant tasks are slowing down the work of the Hub Staff and reducing efficiency in the Hub during the school semester. There is a need to streamline or automate these tasks.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-10">
+        <h3>1.7 Design Statement</h3>
+        <p>
+          To build a system that is mobile, to travel around the Hub’s environment, can manipulate and interact with the Hub’s objects and is autonomous, the staff do not need to act as a middleman
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-10">
+        <h3>1.8 Value Proposition</h3>
+        <image-component tag="image" source="assets/vpc.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          To assist in handling tasks that cannot be handled by software changes due to the physical nature of interaction, a physical solution can be created that will be able to aid the staff in handling work. 
+        </p>
+        <p>
+          This project will develop a robot that is under the “Mobile Manipulator” classification that has both traversal and mobile capabilities. This Mobile Manipulator will be able to travel around the Hub’s space with capabilities to interact and manipulate objects to deliver to the Staff. To control all this, the system must be autonomous to not burden the staff with another device they need to monitor constantly. 
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-11">
+        <h3>1.9 Design Specifications</h3>
+        <p>
+          Based on the derived problem statements and key problems identified by the staff, the design specifications were prepared. Given our limited manpower, budget of $1600 SGD and time for development of less than a year, we decided to scope down to 3 distinct tasks that the system must achieve that assists with the staff.
+        </p>
+        <p>
+          1.	The system must be able to perform tool collection  
+        </p>
+         <p>
+          2.	The system must be capable of point-to-point delivery 
+        </p>
+         <p>
+          3.	To supplement controls to the system, a user interface must be created 
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-12">
+        <h3>1.9.1 Task 1: Tool Collection</h3>
+        <image-component tag="image" source="assets/ploc.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          For task 1, the robot is to grab tools from the pegboard, put it into an onboard basket and deliver it to a table. End-effector system with tool changer capabilities enables picking tools of different geometries.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-13">
+        <h3>1.9.2 Task 2: Point - to - point delivery</h3>
+        <image-component tag="image" source="assets/delRoute.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          For task 2, the robot is to travel to the storeroom where several components are located to return items that the students have borrowed throughout the day. The onboard basket can be detached from the system to return items as a set. 
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-14">
+        <h3>1.9.2 Task 3: User Interface</h3>
+        <image-component tag="image" source="assets/task3.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          For task 3, for the staff to control and monitor signs onboard for the system to function, a user interface is to create that can link commands from the user to the relevant commands for the hardware to perform the task.  
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-15">
+        <h3>1.10.0 Concept Development</h3>
+        <image-component tag="image" source="assets/condev.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          To evaluate the ideal concepts for development, we cross compared various concepts that fulfil the tasks across various metrics such as hardware complexity, cost, scalability etc. At the end, the traditional mobile manipulator is the ideal choice as there is a high degree of flexibility in changing out end-effectors for the system, it can adapt to the environment and is statically stable even during power loss or in emergency scenarios.
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-16">
+        <h3>1.11.0 AMR Unit</h3>
+        <image-component tag="image" source="assets/amr.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          For the AMR base, we were provided with the Sesto Magnus Lite. It has the following capabilities:
+        </p>
+        <p>
+          - 100kg maximum payload capacity
+        </p>
+        <p>
+          -	Autonomous navigation 
+        </p>
+        <p>
+          -	Differential drive wheelbase 
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-17">
+        <h3>1.12.0 Cobot Unit</h3>
+        <image-component tag="image" source="assets/cobot.png"
+          subtitle="Fig 4: Problem Identification"></image-component>
+        <p>
+          For the Cobot, we used the Mitsubishi Electric RV-5AS Cobot Arm. It has the following capabilities:
+        </p>
+        <p>
+          -	5kg maximum payload capacity
+        </p>
+        <p>
+          -	Reach of 910mm
+        </p>
+        <p>
+          -	Positional accuracy of ±0.03mm
+        </p>
+        <p>
+          -	ROS2 driver availability
+        </p>
+      </div>
+
+      <div id="sub-section-1-header-18">
+        <h3>1.13.0 Subsystem Identification</h3>
+        <p>
+          Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
+        </p>
+        <image-component tag="image" source="assets/sub1.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          <image-component tag="image" source="assets/sub2.png"
+          subtitle="Fig 4: Subsystems Part 2"></image-component>
+      </div>
+
+      <div id="sub-section-1-header-18">
+        <h3>1.14.0 Work Allocation</h3>
+        <p>
+          Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
+        </p>
+        <image-component tag="image" source="assets/sub1.png"
+          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          <image-component tag="image" source="assets/sub2.png"
+          subtitle="Fig 4: Subsystems Part 2"></image-component>
       </div>
       
 
