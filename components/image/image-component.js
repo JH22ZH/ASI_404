@@ -24,7 +24,21 @@ class ImageComponent extends HTMLElement {
     <style>
       :host {
         display: block;
+        max-width: 100%;
+        margin: 20px auto;
         text-align: center;
+      }
+
+      :host([size="small"]) {
+        max-width: 40%;
+      }
+
+      :host([size="medium"]) {
+        max-width: 60%;
+      }
+
+      :host([size="large"]) {
+        max-width: 85%;
       }
 
       img {

@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
 
+
+  <link rel="stylesheet" href="./components/image/image-component.css">
   <script type="module" src="./components/image/image-component.js"></script>
 
   <script type="module" src="./components/video/video.js"></script>
@@ -84,6 +86,24 @@
     <sl-divider></sl-divider>
 
     <div>
+      <div id="section-header-1">
+        <h2> Acknowledgements </h2>
+        <p>
+          We would like to sincerely thank our project supervisors, Mr Nicholas and Graham, for their guidance, encouragement, and confidence in our team throughout this module. Their mentorship has been a key factor in our success, and their trust in allowing us the freedom to explore and make decisions independently has greatly enriched our learning experiences. Our supervisor’s willingness to share their knowledge and provide constant support has been invaluable, and their dedication to our growth has made a lasting impact on our project journey.
+        </p>
+        <p>
+          Our gratitude also goes to the workshop technicians, Mr. Hamilton and Mr Dickson for their technical expertise and continuous assistance in ensuring our design was optimized for effective manufacturing.
+        </p>
+        <p>
+          We would also like to thank Ms. Annie for her efforts in managing procurement and ensuring that essential materials were acquired smoothly and on time.
+        </p>
+        <p>
+          Special thanks to Professor Goh Cher Hiang for reviewing our project and offering constructive feedback that helped us improve further.
+        </p>
+        <p>
+          Finally, we extend our appreciation to EDIC for their generous funding support, which has been instrumental in bringing our project to fruition.
+        </p>
+      </div>
 
       <!-- This is an example of what a section might look like -->
       <div id="section-header-1">
@@ -145,22 +165,31 @@
         <image-component tag="image" source="assets/ILounge.png"
           subtitle="Fig 4: Floor Plan of the Hub"></image-component>
       </div>
+      
+    </div>
+
+    <div>
+
+      <!-- This is an example of what a section might look like -->
+      <div id="section-header-1">
+        <h2> 2. Problem Analysis</h2>
+      </div>
 
       <div id="sub-section-1-header-6">
-        <h3>1.3 Stakeholders</h3>
+        <h3>2.1 Stakeholders</h3>
         <p>
           The project involves the IDP Technical Staff, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the IDP Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
         </p>
-        <image-component tag="image" source="assets/Nulle.png"
-          subtitle="Fig 4: Yee Teng Here"></image-component>
+        <image-component size="large" tag="image" source="assets/idpstaff.png"
+          subtitle="Fig 4: IDP Staff Members"></image-component>
       </div>
 
       <div id="sub-section-1-header-7">
-        <h3>1.4 User Survey</h3>
+        <h3>2.2 User Survey</h3>
         <p>
           User surveys conducted by the team were to collect information such as the taskings that the staff members need to conduct daily, the frequency of each task and their thoughts on how to improve their current workload. 
         </p>
-        <image-component tag="image" source="assets/UserSurvey.png"
+        <image-component size="large" tag="image" source="assets/UserSurvey.png"
           subtitle="Fig 5: User Survey on tasks done"></image-component>
 
         <p>
@@ -170,7 +199,7 @@
         <p>
           To gain further insights into the work that the staff need to handle, we observed the daily footfall of the Hub’s space for the span of a month alongside gathering historical data of other major work that the staff must handle. 
         </p>
-        <image-component tag="image" source="assets/Avgfootfall.png"
+        <image-component size="large" tag="image" source="assets/Avgfootfall.png"
           subtitle="Fig 6: Average daily footfall of the Hub from opening to closing"></image-component>
         <image-component tag="image" source="assets/graphs.png"
           subtitle="Fig 7: Graphs showing the rise in both bookings and fabrication hours that the staff must handle."></image-component>
@@ -178,11 +207,11 @@
       </div>
 
       <div id="sub-section-1-header-8">
-        <h3>1.5 Problem description</h3>
+        <h3>2.3 Problem description</h3>
         <p>
           To ascertain the problems further, we drafted up a problem identification table utilising the 5W1H template. 
         </p>
-        <image-component tag="image" source="assets/5W1h.png"
+        <image-component size="large" tag="image" source="assets/5W1h.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         
         <p>
@@ -191,21 +220,21 @@
       </div>
 
       <div id="sub-section-1-header-9">
-        <h3>1.6 Problem Statement</h3>
+        <h3>2.4 Problem Statement</h3>
         <p>
           Several redundant tasks are slowing down the work of the Hub Staff and reducing efficiency in the Hub during the school semester. There is a need to streamline or automate these tasks.
         </p>
       </div>
 
       <div id="sub-section-1-header-10">
-        <h3>1.7 Design Statement</h3>
+        <h3>2.5 Design Statement</h3>
         <p>
           To build a system that is mobile, to travel around the Hub’s environment, can manipulate and interact with the Hub’s objects and is autonomous, the staff do not need to act as a middleman
         </p>
       </div>
 
       <div id="sub-section-1-header-10">
-        <h3>1.8 Value Proposition</h3>
+        <h3>2.6 Value Proposition</h3>
         <image-component tag="image" source="assets/vpc.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         <p>
@@ -217,7 +246,7 @@
       </div>
 
       <div id="sub-section-1-header-11">
-        <h3>1.9 Design Specifications</h3>
+        <h3>2.7 Design Specifications</h3>
         <p>
           Based on the derived problem statements and key problems identified by the staff, the design specifications were prepared. Given our limited manpower, budget of $1600 SGD and time for development of less than a year, we decided to scope down to 3 distinct tasks that the system must achieve that assists with the staff.
         </p>
@@ -233,7 +262,7 @@
       </div>
 
       <div id="sub-section-1-header-12">
-        <h3>1.9.1 Task 1: Tool Collection</h3>
+        <h3>2.7.1 Task 1: Tool Collection</h3>
         <image-component tag="image" source="assets/ploc.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         <p>
@@ -242,7 +271,7 @@
       </div>
 
       <div id="sub-section-1-header-13">
-        <h3>1.9.2 Task 2: Point - to - point delivery</h3>
+        <h3>2.7.2 Task 2: Point - to - point delivery</h3>
         <image-component tag="image" source="assets/delRoute.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         <p>
@@ -251,7 +280,7 @@
       </div>
 
       <div id="sub-section-1-header-14">
-        <h3>1.9.2 Task 3: User Interface</h3>
+        <h3>2.7.3 Task 3: User Interface</h3>
         <image-component tag="image" source="assets/task3.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         <p>
@@ -260,7 +289,7 @@
       </div>
 
       <div id="sub-section-1-header-15">
-        <h3>1.10.0 Concept Development</h3>
+        <h3>2.8.0 Concept Development</h3>
         <image-component tag="image" source="assets/condev.png"
           subtitle="Fig 4: Problem Identification"></image-component>
         <p>
@@ -269,7 +298,7 @@
       </div>
 
       <div id="sub-section-1-header-18">
-        <h3>1.11.0 Subsystem Identification</h3>
+        <h3>2.9.0 Subsystem Identification</h3>
         <p>
           Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
         </p>
@@ -280,15 +309,13 @@
       </div>
 
       <div id="sub-section-1-header-18">
-        <h3>1.12.0 Work Allocation</h3>
-        <image-component tag="image" source="assets/workalloc.png"
+        <h3>2.10.0 Work Allocation</h3>
+        <image-component size="medium" tag="image" source="assets/workalloc.png"
           subtitle="Fig 4: Subsystems Part 1"></image-component>
-      </div>
-      
-
-
-      
+      </div>      
     </div>
+
+
 
 
     <br />
@@ -347,7 +374,7 @@
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
-        <h2>3. Mechanical Subsystem - End-Effector</h2>
+        <h2>3. Mechanical Subsystem - End-Effector (Jason)</h2>
         <p>
           To design the End Effectors for the system, design constraints must be established in terms of the actuation mode of choice, overall maximum size and the maximum mass before further analysis on the approach can be done. 
         </p>
@@ -379,7 +406,7 @@
         <p>
           Allocated space on the robot structure: 600mm x 135mm x 200mm
         </p>
-        <image-component tag="image" source="assets/manspace.png"
+        <image-component size="medium" tag="image" source="assets/manspace.png"
           subtitle="Fig 4: Subsystems Part 1"></image-component>
       </div>
       <div id="sub-section-2-header-2">
@@ -389,7 +416,7 @@
         </p>
         <image-component tag="image" source="assets/collagetools.png"
           subtitle="Fig 4: Subsystems Part 1"></image-component>
-        <image-component tag="image" source="assets/summdatapoints.png"
+        <image-component size="small" tag="image" source="assets/summdatapoints.png"
           subtitle="Fig 4: Subsystems Part 1"></image-component>
       </div>
 
@@ -475,7 +502,7 @@
         <p>
           Current tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
         </p>
-        <image-component tag="image" source="assets/Magnet.png"
+        <image-component size="small" tag="image" source="assets/Magnet.png"
           subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
       </div>
     </div>
@@ -528,7 +555,7 @@
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
-        <h2>5. Software Subsystems</h2>
+        <h2>5. Software Subsystems (Jason)</h2>
       </div>
 
       <div id="sub-section-2-header-1">
@@ -652,9 +679,9 @@
         <p>
           Our final GUI vision is a single, unified interface that controls both the Cobot and the AMR. Built for staff and makers, it enables task execution without any coding, using clear workflows and teach-by-demonstration tools. A dedicated teaching mode streamlines adding goals and waypoints, making everyday operation fast and intuitive.
         </p>
-        <image-component tag="image" source="assets/Dashboard.png"
+        <image-component size="large" tag="image" source="assets/Dashboard.png"
           subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
-        <image-component tag="image" source="assets/Engineering UI.png"
+        <image-component size="large" tag="image" source="assets/Engineering UI.png"
           subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
         <!-- This is an example of how you might use the video component -->
         <video-component tag="rv5as" source="https://www.youtube.com/embed/4XbvGf5GQhY?si=m-EPjrZX_p1QXRXx"
@@ -689,6 +716,105 @@
         </li>
       </ul>
     </div>
+
+    <div id="Appendix_A" class="Appendix_A">
+      <sl-divider></sl-divider>
+      <h2>Appendix A</h2>
+      <p>
+      This appendix is dedicated to the Cobot, Mitsubishi Electric RV5-AS, Specifications and Information.
+      </p>
+      <h3>
+      A1
+      </h3>
+      <image-component size="large" tag="image" source="assets/cobot/armlimits.png"
+          subtitle="RV5_AS Limits"></image-component>
+      <h3>
+      <h3>
+      A2
+      </h3>
+      <image-component size="large" tag="image" source="assets/cobot/cobotspec.png"
+          subtitle="RV5_AS Specifications 1"></image-component>
+      <h3>
+      A3
+      </h3>
+      <image-component size="large" tag="image" source="assets/cobot/cobotspec2.png"
+          subtitle="RV5_AS Specifications 2"></image-component>
+      <h3>
+    </div>
+
+    <div id="Appendix_B" class="Appendix_B">
+      <sl-divider></sl-divider>
+      <h2>Appendix B</h2>
+      <p>
+      This appendix is dedicated to the AMR, Sesto Magnus Lite, Specifications and Information.
+      </p>
+      <h3>
+      B1
+      </h3>
+      <image-component size="large" tag="image" source="assets/sesto/magdimensions.png"
+          subtitle="Magnus Lite Dimensions"></image-component>
+      <h3>
+      B2
+      </h3>
+      <image-component size="large" tag="image" source="assets/sesto/magspec.png"
+          subtitle="Magnus Lite Specifications"></image-component>
+      <h3>
+      B3
+      </h3>
+      <image-component size="large" tag="image" source="assets/sesto/magsafety.png"
+          subtitle="Magnus Lite Safety Zone"></image-component>
+      <h3>
+      B4
+      </h3>
+      <image-component size="large" tag="image" source="assets/sesto/magsafetysys.png"
+          subtitle="Magnus Lite Safety System"></image-component>
+    </div>
+
+    <div id="Appendix_C" class="Appendix_C">
+      <sl-divider></sl-divider>
+      <h2>Appendix C</h2>
+      <p>
+      This appendix is dedicated to any additional data collection on the Hub's environment and space. 
+      </p>
+    </div>
+
+    <div id="Appendix_D" class="Appendix_D">
+      <sl-divider></sl-divider>
+      <h2>Appendix D</h2>
+      <p>
+      This appendix is dedicated to the Frame Mechanical Subsystem.
+      </p>
+    </div>
+
+    <div id="Appendix_E" class="Appendix_E">
+      <sl-divider></sl-divider>
+      <h2>Appendix E</h2>
+      <p>
+      This appendix is dedicated to the End Effector Mechanical Subsystem.
+      </p>
+      <h3>
+      E1
+      </h3>
+      <image-component size="large" tag="image" source="assets/endeffector/friction.png"
+          subtitle="Coefficient of Friction"></image-component>
+    </div>
+
+    <div id="Appendix_F" class="Appendix_F">
+      <sl-divider></sl-divider>
+      <h2>Appendix F</h2>
+      <p>
+      This appendix is dedicated to the Electrical Integration between the Arm and Cobot.
+      </p>
+    </div>
+
+    <div id="Appendix_G" class="Appendix_G">
+      <sl-divider></sl-divider>
+      <h2>Appendix G</h2>
+      <p>
+      This appendix is dedicated to the Software Subsystem.
+      </p>
+    </div>
+
   </div>
 
   <!-- This is the code to display the scroll to top button for ergonomic -->
