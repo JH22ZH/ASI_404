@@ -236,7 +236,7 @@
       <div id="sub-section-1-header-10">
         <h3>2.6 Value Proposition</h3>
         <image-component tag="image" source="assets/vpc.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+          subtitle="Fig 4: Value Proposition Canvas"></image-component>
         <p>
           To assist in handling tasks that cannot be handled by software changes due to the physical nature of interaction, a physical solution can be created that will be able to aid the staff in handling work. 
         </p>
@@ -264,7 +264,7 @@
       <div id="sub-section-1-header-12">
         <h3>2.7.1 Task 1: Tool Collection</h3>
         <image-component tag="image" source="assets/ploc.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+          subtitle="Fig 4: Location of Pegboard in the Hub"></image-component>
         <p>
           For task 1, the robot is to grab tools from the pegboard, put it into an onboard basket and deliver it to a table. End-effector system with tool changer capabilities enables picking tools of different geometries.
         </p>
@@ -273,7 +273,7 @@
       <div id="sub-section-1-header-13">
         <h3>2.7.2 Task 2: Point - to - point delivery</h3>
         <image-component tag="image" source="assets/delRoute.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+          subtitle="Fig 4: P2P Delivery Route"></image-component>
         <p>
           For task 2, the robot is to travel to the storeroom where several components are located to return items that the students have borrowed throughout the day. The onboard basket can be detached from the system to return items as a set. 
         </p>
@@ -282,7 +282,7 @@
       <div id="sub-section-1-header-14">
         <h3>2.7.3 Task 3: User Interface</h3>
         <image-component tag="image" source="assets/task3.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+          subtitle="Fig 4: User sequence diagram of GUI"></image-component>
         <p>
           For task 3, for the staff to control and monitor signs onboard for the system to function, a user interface is to create that can link commands from the user to the relevant commands for the hardware to perform the task.  
         </p>
@@ -291,7 +291,7 @@
       <div id="sub-section-1-header-15">
         <h3>2.8.0 Concept Development</h3>
         <image-component tag="image" source="assets/condev.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+          subtitle="Fig 4: Concept Development"></image-component>
         <p>
           To evaluate the ideal concepts for development, we cross compared various concepts that fulfil the tasks across various metrics such as hardware complexity, cost, scalability etc. At the end, the traditional mobile manipulator is the ideal choice as there is a high degree of flexibility in changing out end-effectors for the system, it can adapt to the environment and is statically stable even during power loss or in emergency scenarios.
         </p>
@@ -309,9 +309,16 @@
       </div>
 
       <div id="sub-section-1-header-18">
-        <h3>2.10.0 Work Allocation</h3>
+        <h3>2.10.0 Design Methodology</h3>
+        <p>For the design methodology, the team intends to adopt the framework seen in the figure below that covers research, iterative design, execution and finally evaluation of results until the goals are achieved.  </p>
+        <image-component tag="image" source="assets/Design Methodology.drawio.svg"
+          subtitle="Fig 4: Design Methodology Framework"></image-component>
+      </div>    
+
+      <div id="sub-section-1-header-18">
+        <h3>2.11.0 Work Allocation</h3>
         <image-component size="medium" tag="image" source="assets/workalloc.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: Work Allocation"></image-component>
       </div>      
     </div>
 
@@ -323,7 +330,7 @@
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
-        <h2>2. Mechanical Subsystem - Frame</h2>
+        <h2>2. Mechanical Subsystem - Frame (Fang Chen)</h2>
         <p>
           Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
           eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
@@ -386,7 +393,7 @@
           To narrow down the ideal Actuation mode for the system, we evaluated the main types of actuation methods against various criteria for the system through the Concept Screening technique. 
         </p>
         <image-component tag="image" source="assets/ActMode.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: Actuation mode concept screening"></image-component>
           <p>
           Based on the limitations of the payload of the AMR unit and space constraints within the body to fit all the components, the Hardware Requirements section was listed with higher weightage. Based on the concept screening and understanding of our system, we decided to choose the electric actuation mode for the design of the end-effector. 
         </p>
@@ -407,7 +414,7 @@
           Allocated space on the robot structure: 600mm x 135mm x 200mm
         </p>
         <image-component size="medium" tag="image" source="assets/manspace.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: Space allocated for End Effectors"></image-component>
       </div>
       <div id="sub-section-2-header-2">
         <h3>3.3 End Effector Analysis (Task 1: Tool pick and place)</h3>
@@ -415,9 +422,9 @@
           Based on the task requirements specified, one of the end effectors would need to interact with the various tools specified on the pegboard. To get an understanding on the size and mass of the tools that the end effector must grab, the team measured and obtained the relevant data to fix our design requirements. 
         </p>
         <image-component tag="image" source="assets/collagetools.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: A collage showing the various types of tools that the system must interact with."></image-component>
         <image-component size="small" tag="image" source="assets/summdatapoints.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: Table showing the various data points of the manipulator."></image-component>
       </div>
 
       <div id="sub-section-2-header-2">
@@ -433,7 +440,7 @@
           With the design constraints known, design specifications for both the gripper and tool changer unit are specified.
         </p>
         <image-component tag="image" source="assets/endeffds.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: End Effector design specifications"></image-component>
       </div>
 
       <div id="sub-section-2-header-2">
@@ -442,15 +449,15 @@
           To choose the ideal gripper mechanisms, the team used a concept screening chart to evaluate different designs against key metrics.
         </p>
         <image-component tag="image" source="assets/grippercc.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 4: Gripper concept selection"></image-component>
         <p>
           Based on the metric scoring, the rack and pinion and lead screw approach were both chosen to further prototype and explore.
         </p>
         <p>
           To avoid excessive contact forces onto a singular contact point, the team decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
         </p> 
-        <image-component tag="image" source="assets/null.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>   
+        <image-component size = "medium" tag="image" source="assets/finray.png"
+          subtitle="Fig 4: Example of the fin ray gripper finger from Festo"></image-component>   
       </div>
 
       <div id="sub-section-2-header-2">
@@ -458,8 +465,8 @@
         <p>
           As the system will be interacting with various tools, a singular gripper design may be unable to carry or support all types of objects. As a result, the team aims to implement a tool changing system onboard the Cobot to facilitate end-effector changes. Due to the actuation mode being limited to being electric, the team narrowed down 3 concepts that can be explored and evaluated those against metrics.
         </p>
-        <image-component tag="image" source="assets/toolcc.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+        <image-component size = "large" tag="image" source="assets/toolcc.png"
+          subtitle="Fig 4: Tool Changer concept selection"></image-component>
         <p>
           Due to the limited space and mass constraints on the system, the Compactness/Weight criterion was weighted highly. Based on the scoring, the Permanent Electromagnet was chosen to be the concept to be explored further.
         </p>
@@ -503,7 +510,7 @@
           Current tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
         </p>
         <image-component size="small" tag="image" source="assets/Magnet.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure x: Electromagnet and steel"></image-component>
       </div>
     </div>
 
@@ -567,7 +574,7 @@
           A user sequence diagram was created to showcase the generic workflow of the system by the user. 
         </p>
         <image-component tag="image" source="assets/userseqdiagram.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure x: User Sequence Diagram"></image-component>
 
         <p>
           The Robot Software System consists of:
@@ -597,7 +604,7 @@
           A robot sequence diagram was also created to show the motions of the robot upon receiving a command. 
         </p>
         <image-component tag="image" source="assets/roboseq.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure x: Robot Sequence Diagram"></image-component>
 
         
       </div>
@@ -617,13 +624,13 @@
           A software container diagram using the C4 model notation was used to show the communication between nodes to create the Robot Software System.
         </p>
         <image-component tag="image" source="assets/C4 Container Diagram.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure x: Container Diagram showing robot software system"></image-component>
       </div>
 
       <div id="sub-section-2-header-1">
         <h4>5.3.1 Safety Interfacing</h4>
-        <image-component tag="image" source="assets/Safety Diagram for System.svg"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+        <image-component size = "medium" tag="image" source="assets/Safety Diagram for System.svg"
+          subtitle="Figure x: Safety Interfaces between the AMR and Cobot"></image-component>
         <p>
           Between the AMR and Cobot, there are several safety features in place to protect the user in the event of a collision. To add on to monitoring these peripherals, the software system will send movement commands only if the AMR is stationary and vice versa. A programmed protective bubble governed by an ellipsoid equation will be activated around the Cobot during operation to ensure incorrect trajectory calculations/movements will be terminated. 
         </p>
@@ -638,7 +645,7 @@
           Since developing a planner was not in the scope of the project, the team opted to use planners available in the MoveIt2 Library with ROS2 to fit the Cobot. There are different planners, each with their own advantages. 3 planners were chosen based on the Cobot ROS2 driver compatibility. These are OMPL (Open Motion Planning Library), CHOMP (Covariant Hamiltonian Optimization for Motion Planning) and PILZ (PILZ Industrial Motion Planner). We cross-compared the planners with our use case based on metrics seen in the table below.
         </p>
         <image-component tag="image" source="assets/plannerscoring.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure x: Selection of ideal trajectory planner for Cobot"></image-component>
         <p>
           For scoring, we scored it from 1 – 3, with 3 being ideal. Due to the conditions that the robot system must interact with, planners with unpredictable behaviour or have probability-based planning were rated lower. Planners with high computational requirement were also rated low. PILZ ended up being the most ideal planner for our use case as it chooses the shortest path while following velocity constraints with high repeatability and predictability.  
         </p>
@@ -653,6 +660,8 @@
         <p>
           For the AMR to reach a desired waypoint, an API call to the Waypoints API will allow for requesting a specific goal point for the robot to travel too that can also be saved via another API call to the Goal API.
         </p>
+        <video-component tag="amr" source="https://www.youtube.com/embed/yUhf1zvPS7Y?si=vLAjFvF9QwQqjgCw"
+          subtitle="Video: AMR Waypoint Testing"></video-component>
       </div>
 
 
