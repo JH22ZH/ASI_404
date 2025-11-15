@@ -255,6 +255,16 @@
           </sl-tree-item>
         </sl-tree-item>
 
+        <sl-tree-item expanded>
+          <a href="#P-7">7. Project Plan and Future Work</a>
+          <sl-tree-item>
+            <a href="#P-71">7.1. Gantt Chart</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#P-72">7.2. Future work</a>
+          </sl-tree-item>
+        </sl-tree-item>
+
         <sl-tree-item>
           <a href="#references">References</a>
         </sl-tree-item>
@@ -771,7 +781,7 @@
         <image-component tag="image" source="assets/ActMode.png"
           subtitle="Fig 44: Actuation mode concept screening"></image-component>
           <p>
-          Based on the limitations of the payload of the AMR unit and space constraints within the body to fit all the components, the Hardware Requirements section was listed with higher weightage. Based on the concept screening and understanding of our system, we decided to choose the electric actuation mode for the design of the end-effector. 
+          Given the AMR’s payload limits and internal space constraints, hardware requirements received higher weight. Based on the concept screening and system needs, electric actuation was selected for the end effector.
         </p>
       </div>
 
@@ -795,7 +805,7 @@
       <div id="EE-43">
         <h3>4.3 End Effector Analysis (Task 1: Tool pick and place)</h3>
         <p>
-          Based on the task requirements specified, one of the end effectors would need to interact with the various tools specified on the pegboard. To get an understanding on the size and mass of the tools that the end effector must grab, the team measured and obtained the relevant data to fix our design requirements. 
+          Given the task requirements, one end effector must pick tools from the pegboard. Tool size and mass were measured to define the end effector’s design requirements.
         </p>
         <image-component tag="image" source="assets/collagetools.png"
           subtitle="Fig 46: A collage showing the various types of tools that the system must interact with."></image-component>
@@ -806,7 +816,7 @@
       <div id="EE-431">
         <h4>4.3.1 Design challenges</h4>
         <p>
-          Between the various tools, the clamping interface must securely hold varying non-linear surfaces, with material contact surfaces varying across tools (plastic, rubber, steel), each having a different coefficient of friction which impacts the clamping force. Misalignment during gripping is also a concern, as the robot may not always approach the tool at an ideal angle due to positional inaccuracies. The gripper must accommodate these misalignments without dropping the tool.
+          The clamping interface must secure tools with varied, non-linear surfaces and materials (plastic, rubber, steel) whose friction affects required clamping force. Because approach angles may be imperfect, the gripper must tolerate misalignment from positional error without dropping the tool.
           <image-component size="small" tag="image" source="assets/endeffector/robotdeviat.png"
           subtitle="Fig 48: Misalignment due to AMR inaccuracy"></image-component>
         </p>
@@ -832,7 +842,7 @@
           Based on the metric scoring, the rack and pinion and lead screw approach were both chosen to further prototype and explore.
         </p>
         <p>
-          To account for misalignment and excessive contact pressure on non-linear surfaces, I decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
+          To handle misalignment and limit contact pressure on curved surfaces, we explored compliant fingers—specifically the Festo Fin Ray design. Its flexible, fin-like ribbed structure passively wraps around objects, redirecting contact forces into closing forces rather than peeling. The result is gentle, adaptive gripping of irregular or fragile parts, high misalignment tolerance, and simpler actuation/control than rigid parallel jaws.
         </p> 
         <image-component size = "medium" tag="image" source="assets/finray.png"
           subtitle="Fig 51: Example of the fin ray gripper finger from Festo"></image-component>   
@@ -865,7 +875,7 @@
         <image-component tag="image" source="assets/gripperdefor.png"
           subtitle="Fig 53: Nonlinear Analysis of the deformation of a custom Fin-Ray Gripper Finger from TPU-85A (Deformation Scale: 1)"></image-component>
         <p>
-          To test the Rack and Pinion concept with the Fin Ray gripper fingers, I built a 3D-printed prototype using PLA with TPU-85A for the fingers to test the deformation and gripping strength.
+          To test the Rack and Pinion concept with the Fin Ray gripper fingers, a 3D-printed prototype was built using PLA with TPU-85A for the fingers to test the deformation and gripping strength.
         </p>
         <image-component tag="image" source="assets/PrototypeGrip.png"
           subtitle="Fig 54: Prototype Gripper to test concept"></image-component>
@@ -874,8 +884,10 @@
         <image-component tag="image" source="assets/protoexploded.png"
           subtitle="Fig 55: Prototype Gripper Exploded View"></image-component>
         <p>
-          Since this is a prototype, I designed it with parts that facilitate easy swapping of finger geometries to test clamping force. Initial tests showed favourable results in carrying objects up to 900g. Further test will be conducted to validate different gripper profiles and geometries.
+          Since this is a prototype, it was designed with parts that facilitate swapping of finger geometries to test clamping force. Initial tests seen in the video below show favourable results in carrying objects up to 900g. Further tests will be conducted to validate different gripper profiles and geometries.
         </p>
+        <video-component tag="rv5as" source="https://www.youtube.com/embed/jkIgj_byj0M?si=hPrCOvXW5gwAxdUJ"
+          subtitle="Video: Gripper testing with tools"></video-component>
       </div>
 
       <div id="EE-472">
@@ -1010,7 +1022,7 @@
         <image-component size = "medium" tag="image" source="assets/Safety Diagram for System.svg"
           subtitle="Fig 66: Safety Interfaces between the AMR and Cobot"></image-component>
         <p>
-          Between the AMR and Cobot, there are several safety features in place to protect the user in the event of a collision. To add on to monitoring these peripherals, the software system will send movement commands only if the AMR is stationary and vice versa. A programmed protective bubble governed by an ellipsoid equation will be activated around the Cobot during operation to ensure incorrect trajectory calculations/movements will be terminated. 
+          Both the AMR and cobot include collision safeguards. The software system interlocks their motion, cobot commands are sent only when the AMR is stationary, and vice versa. During cobot operation, an ellipsoidal “protective bubble” enforces a safe zone; any trajectory that breaches it is terminated immediately.
         </p>
       </div>
 
@@ -1020,12 +1032,12 @@
           For the Cobot to reach a desired position in space, a positional command made of Vectors and Quaternions must be sent to establish both relative position and orientation, which is called a “frame”. To move between 2 frames with a specified trajectory and constraints would require a trajectory planner. 
         </p>
         <p>
-          Since developing a planner was not in the scope of the project, the team opted to use planners available in the MoveIt2 Library with ROS2 to fit the Cobot. There are different planners, each with their own advantages. 3 planners were chosen based on the Cobot ROS2 driver compatibility. These are OMPL (Open Motion Planning Library), CHOMP (Covariant Hamiltonian Optimization for Motion Planning) and PILZ (PILZ Industrial Motion Planner). We cross-compared the planners with our use case based on metrics seen in the table below.
+          Custom planner development was out of scope, so we used MoveIt2 planners compatible with the cobot driver: OMPL, CHOMP, and PILZ. We evaluated them for our use case and compared their performance across key metrics (See Fig 67).
         </p>
         <image-component tag="image" source="assets/plannerscoring.png"
           subtitle="Fig 67: Selection of ideal trajectory planner for Cobot"></image-component>
         <p>
-          For scoring, we scored it from 1 – 3, with 3 being ideal. Due to the conditions that the robot system must interact with, planners with unpredictable behaviour or have probability-based planning were rated lower. Planners with high computational requirement were also rated low. PILZ ended up being the most ideal planner for our use case as it chooses the shortest path while following velocity constraints with high repeatability and predictability.  
+          We scored planners 1–3 (3 = best), penalizing stochastic/unpredictable behavior and heavy compute. PILZ ranked highest because it deterministically picks the shortest feasible path, respects velocity limits, and delivers repeatable, predictable motion.
         </p>
         <p>
           The planner was defined for use in the test_rv5as.py node such that any input commands will move the robot system accordingly.
@@ -1094,8 +1106,15 @@
         </p>
         <image-component tag="image" source="assets/ganttchart.png"
           subtitle="Figure 71: Gantt Chart to show timeline of development"></image-component>
+      </div>
+
+      <div id="P-72">
+        <h3>7.2 Future work</h3>
         <image-component tag="image" source="assets/fc/sec 7.1 Fig  56.png"
           subtitle="Figure 72: Further developments on the frame structure"></image-component>
+        <p>
+          Future work will focus on completing both the frame and end-effector mechanical design, electronics development for the end-effector, further software development for task planning and GUI creation, and extensive testing of the integrated robot system to ensure reliability and safety.
+        </p>
       </div>
 
     </div>
@@ -1107,6 +1126,9 @@
       <sl-divider></sl-divider>
       <h2>References</h2>
       <ul>
+        <li>
+          Lapusan, C., & et al. (2025). Optimal Design of 3D-Printed Flexible Fingers for Robotic Grippers. Actuators, 14(10), 468. https://doi.org/10.3390/act14100468
+        </li>
         <li>
           Mitsubishi Electric Corporation. (2023). CR800 series controller tracking function instruction manual (BFP-A3520-E).
         </li>
@@ -1130,6 +1152,9 @@
         </li>
         <li>
           Mitsubishi Electric. (n.d.). CR800 series controller troubleshooting (Instruction Manual).
+        </li>
+        <li>
+          Niedziałek, P. W., Figurski, A., & Kowalik, M. P. (2023). Numerical and experimental studies on 3D printed compliant mechanisms in gripper applications. Advances in Science and Technology Research Journal, 17(6), 228–244. https://doi.org/10.12913/22998624/174109
         </li>
         <li>
           SESTO Robotics Pte Ltd. (2022). SESTO Magnus Element software reference manual (Version 1.6.0).
