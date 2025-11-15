@@ -260,14 +260,14 @@
       <div id="Intro_1">
         <h2> 1. Introduction </h2>
         <p>
-          This project aims to develop a Mobile Manipulator for use in the Innovation and Design Hub within NUS, with the system being purpose-built to assist and provide value to the staff stationed in the Hub for task alleviation. This approach is multi-disciplinary in nature, aiming at the mechanical, electrical and software design of the mobile manipulator to facilitate easier modification for tooling, a more user-friendly abstraction layer to code the robot to perform tasks and overall software integration.
+          This project is on developing a mobile manipulator for NUS’s Innovation & Design Hub to relieve staff workload. It integrates mechanical, electrical, and software design to create a unified robot system with a user-friendly GUI control and seamless system integration.
         </p>
       </div>
 
       <div id="Intro_11">
         <h3>1.1 Context</h3>
         <p>
-          Robots are increasingly used to relieve labour shortages and handle repetitive tasks across sectors like warehousing, healthcare, and hospitality. This is accelerating a shift from factory-only deployment to human-centric environments, with robots taking on point-to-point delivery and routine workflows.
+          Robots are increasingly used to relieve labour shortages and handle repetitive tasks across sectors like warehousing, healthcare, and hospitality. This is accelerating a shift from factory-only deployment to human-centric environments, with robots taking on point-to-point delivery and routine workflows as seen in Fig 1.
         </p>
         <image-component tag="image" source="assets/articles.png"
           subtitle="Fig 1: A collage of articles showing an increasing interest in Warehouse Automation"></image-component>
@@ -314,7 +314,7 @@
           Like Sandbox, this space is used for classes and discussion amongst students. 
         </p>
         <image-component tag="image" source="assets/ILounge.png"
-          subtitle="Fig 4: Floor Plan of the Hub"></image-component>
+          subtitle="Fig 5: Floor Plan of the Hub"></image-component>
       </div>
       
     </div>
@@ -329,41 +329,41 @@
       <div id="PA_21">
         <h3>2.1 Stakeholders</h3>
         <p>
-          The project involves the IDP Technical Staff, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the IDP Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
+          The project involves the Hub Technical Staff see in Figure 6, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the Hub Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
         </p>
         <image-component size="large" tag="image" source="assets/idpstaff.png"
-          subtitle="Fig 4: IDP Staff Members"></image-component>
+          subtitle="Fig 6: IDP Staff Members"></image-component>
       </div>
 
       <div id="PA_22">
         <h3>2.2 User Survey</h3>
         <p>
-          User surveys conducted by the team were to collect information such as the taskings that the staff members need to conduct daily, the frequency of each task and their thoughts on how to improve their current workload. 
+          User surveys conducted by the team were to collect information such as the taskings that the staff members need to conduct daily, the frequency of each task (Seen in Figure 7) and their thoughts on how to improve their current workload.
         </p>
         <image-component size="large" tag="image" source="assets/UserSurvey.png"
-          subtitle="Fig 5: User Survey on tasks done"></image-component>
+          subtitle="Fig 7: User Survey on tasks done"></image-component>
 
         <p>
-          Additional info from the staff mentioned that even a single-item pickup is disruptive: components and tools are scattered across the Hub, and requests often arrive while they’re busy, forcing them to pause their work or make students wait. They also noted that students leave used items piled on a table for staff to sort and restock before the 6 pm close, creating a rushed end-of-day process. 
+          Staff report that even single-item pickups disrupt their work: tools are dispersed across the Hub, and requests often arrive mid-task, forcing pauses or delays. Students also pile used items on a table, leaving staff to restock before the 6 pm close, creating a rushed end-of-day.
         </p>
 
         <p>
-          To gain further insights into the work that the staff need to handle, we observed the daily footfall of the Hub’s space for the span of a month alongside gathering historical data of other major work that the staff must handle. 
+          To understand staff workload, we tracked Hub footfall for one month and compiled historical data on major tasks (Figures 8–9). Both series show steady growth in recent months, signaling rising demands without added manpower.
         </p>
-        <image-component size="large" tag="image" source="assets/Avgfootfall.png"
-          subtitle="Fig 6: Average daily footfall of the Hub from opening to closing"></image-component>
+        <image-component size="medium" tag="image" source="assets/Avgfootfall.png"
+          subtitle="Fig 8: Average daily footfall of the Hub from opening to closing"></image-component>
         <image-component tag="image" source="assets/graphs.png"
-          subtitle="Fig 7: Graphs showing the rise in both bookings and fabrication hours that the staff must handle."></image-component>
+          subtitle="Fig 9: Graphs showing the rise in both bookings and fabrication hours that the staff must handle."></image-component>
 
       </div>
 
       <div id="PA_23">
         <h3>2.3 Problem description</h3>
         <p>
-          To ascertain the problems further, we drafted up a problem identification table utilising the 5W1H template. 
+          To ascertain the problems further, we drafted up a problem identification table utilising the 5W1H template in Figure 10. 
         </p>
-        <image-component size="large" tag="image" source="assets/5W1h.png"
-          subtitle="Fig 4: Problem Identification"></image-component>
+        <image-component size="medium" tag="image" source="assets/5W1h.png"
+          subtitle="Fig 10: Problem Identification"></image-component>
         
         <p>
           Staff surveys and observations show a consistent strain in balancing time-critical tasks with student support. Accordingly, we framed a problem statement that captures these operational challenges faced by Hub staff.
@@ -387,12 +387,12 @@
       <div id="PA_26">
         <h3>2.6 Value Proposition</h3>
         <image-component tag="image" source="assets/vpc.png"
-          subtitle="Fig 4: Value Proposition Canvas"></image-component>
+          subtitle="Fig 11: Value Proposition Canvas"></image-component>
         <p>
           To assist in handling tasks that cannot be handled by software changes due to the physical nature of interaction, a physical solution can be created that will be able to aid the staff in handling work. 
         </p>
         <p>
-          This project will develop a robot that is under the “Mobile Manipulator” classification that has both traversal and mobile capabilities. This Mobile Manipulator will be able to travel around the Hub’s space with capabilities to interact and manipulate objects to deliver to the Staff. To control all this, the system must be autonomous to not burden the staff with another device they need to monitor constantly. 
+          The team will develop an autonomous mobile manipulator that combines navigation and manipulation: it can move through the Hub, pick and handle objects, and deliver them to staff—without requiring constant monitoring or extra devices. 
         </p>
       </div>
 
@@ -402,20 +402,20 @@
           Based on the derived problem statements and key problems identified by the staff, the design specifications were prepared. Given our limited manpower, budget of $1600 SGD and time for development of less than a year, we decided to scope down to 3 distinct tasks that the system must achieve that assists with the staff.
         </p>
         <p>
-          1.	The system must be able to perform tool collection  
+          Task 1.	The system must be able to perform tool collection  
         </p>
          <p>
-          2.	The system must be capable of point-to-point delivery 
+          Task 2.	The system must be capable of point-to-point delivery 
         </p>
          <p>
-          3.	To supplement controls to the system, a user interface must be created 
+          Task 3.	To supplement controls to the system, a user interface must be created 
         </p>
       </div>
 
       <div id="PA_271">
         <h3>2.7.1 Task 1: Tool Collection</h3>
         <image-component tag="image" source="assets/ploc.png"
-          subtitle="Fig 4: Location of Pegboard in the Hub"></image-component>
+          subtitle="Fig 12: Location of Pegboard in the Hub"></image-component>
         <p>
           For task 1, the robot is to grab tools from the pegboard, put it into an onboard basket and deliver it to a table. End-effector system with tool changer capabilities enables picking tools of different geometries.
         </p>
@@ -424,7 +424,7 @@
       <div id="PA_272">
         <h3>2.7.2 Task 2: Point - to - point delivery</h3>
         <image-component tag="image" source="assets/delRoute.png"
-          subtitle="Fig 4: P2P Delivery Route"></image-component>
+          subtitle="Fig 13: P2P Delivery Route"></image-component>
         <p>
           For task 2, the robot is to travel to the storeroom where several components are located to return items that the students have borrowed throughout the day. The onboard basket can be detached from the system to return items as a set. 
         </p>
@@ -433,7 +433,7 @@
       <div id="PA_273">
         <h3>2.7.3 Task 3: User Interface</h3>
         <image-component tag="image" source="assets/task3.png"
-          subtitle="Fig 4: User sequence diagram of GUI"></image-component>
+          subtitle="Fig 14: User sequence diagram of GUI"></image-component>
         <p>
           For task 3, for the staff to control and monitor signs onboard for the system to function, a user interface is to create that can link commands from the user to the relevant commands for the hardware to perform the task.  
         </p>
@@ -442,9 +442,9 @@
       <div id="PA_28">
         <h3>2.8.0 Concept Development</h3>
         <image-component tag="image" source="assets/condev.png"
-          subtitle="Fig 4: Concept Development"></image-component>
+          subtitle="Fig 15: Concept Development"></image-component>
         <p>
-          To evaluate the ideal concepts for development, we cross compared various concepts that fulfil the tasks across various metrics such as hardware complexity, cost, scalability etc. At the end, the traditional mobile manipulator is the ideal choice as there is a high degree of flexibility in changing out end-effectors for the system, it can adapt to the environment and is statically stable even during power loss or in emergency scenarios.
+          The team compared candidate concepts across hardware complexity, cost, scalability, and task fit. A traditional mobile manipulator emerged as best: it supports quick end-effector swaps, adapts well to the environment, and remains statically stable—even during power loss or emergencies.
         </p>
       </div>
 
@@ -454,22 +454,22 @@
           Based on the taskings that the robot must accomplish, we have identified the key subsystems that need to be developed to bring the system to a minimum viable product. 
         </p>
         <image-component tag="image" source="assets/sub1.png"
-          subtitle="Fig 4: Subsystems Part 1"></image-component>
+          subtitle="Fig 16: Subsystems Part 1"></image-component>
           <image-component tag="image" source="assets/sub2.png"
-          subtitle="Fig 4: Subsystems Part 2"></image-component>
+          subtitle="Fig 17: Subsystems Part 2"></image-component>
       </div>
 
       <div id="PA_210">
         <h3>2.10.0 Design Methodology</h3>
-        <p>For the design methodology, the team intends to adopt the framework seen in the figure below that covers research, iterative design, execution and finally evaluation of results until the goals are achieved.  </p>
+        <p>For the design methodology, the team intends to adopt the framework seen in the figure below that covers research, iterative design, execution and finally evaluation of results until all goals are achieved.  </p>
         <image-component size= "medium"tag="image" source="assets/Design Methodology.drawio.svg"
-          subtitle="Fig 4: Design Methodology Framework"></image-component>
+          subtitle="Fig 18: Design Methodology Framework"></image-component>
       </div>    
 
       <div id="PA_211">
         <h3>2.11.0 Work Allocation</h3>
         <image-component size="medium" tag="image" source="assets/workalloc.png"
-          subtitle="Fig 4: Work Allocation"></image-component>
+          subtitle="Fig 19: Work Allocation"></image-component>
       </div>      
     </div>
 
@@ -480,51 +480,214 @@
     <br />
     <sl-divider></sl-divider>
     <div>
-      <div id="F_1">
+      <div id="F_3">
         <h2>3. Mechanical Subsystem - Frame (Fang Chen)</h2>
         <p>
-          Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Mi proin sed libero enim sed faucibus turpis in
-          eu. Odio ut sem nulla pharetra diam sit. Nibh cras pulvinar mattis nunc sed blandit libero. Lacus sed viverra
-          tellus in hac habitasse platea dictumst vestibulum. At augue eget arcu dictum varius duis. Mauris ultrices
-          eros in cursus turpis massa (Lindberg, 1967). Libero nunc consequat interdum varius sit amet mattis. Ut ornare
-          lectus sit amet est placerat in egestas erat. Elementum curabitur vitae nunc sed. Proin nibh nisl condimentum
-          id venenatis a condimentum vitae sapien (Chamberlin et al., 2008). Vitae tempus quam pellentesque nec nam
-          aliquam sem.
+          The scope of this subsystem is to design a structure to integrate the AMR and Cobot mechanically. 
         </p>
       </div>
 
-      <div id="F_11">
-        <h3>3.1. Sub-section Header 1</h3>
+      <div id="F_31">
+        <h3>3.1. Design Pre-Evaluation</h3>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          Some key specifications influencing our design are shown in the figure below. Refer to Appendix A for detailed information. <a href="#Appendix_A">Link to Appendix A</a>
         </p>
-
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
       </div>
 
-      <div id="F_12">
-        <h3>3.2. Sub-section Header 2</h3>
+      <div id="F_32">
+        <h3>3.2. Design constraints</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+          To design the robot, design constraints must first be established. The 2 categories of constraints are environmental and system constraints. 
+        </p>
+      </div>
+
+      <div id="F_321">
+        <h3>3.2.1. Environmental Constraints</h3>
+        <p>
+          To perform Task 1 (Tool Collection) and Task 2 (Point-to-Point Delivery), the robot’s physical size must be appropriate. Constrains on the robot’s dimension are as identified:
+        </p>
+        <p> 1. Height Constraints:</p>
+        <p> The structure must position the Cobot at a suitable height so that its full 910 mm reach can access both the top and bottom sections of the pegboard, as well as the worktable surface as shown in figure 21.</p>
+        <p> 2. Width Constraints:</p>
+        <p> The robot’s overall footprint must fit within the aisle and workspace clearances shown in figure 21 to allow smooth navigation in the Hub.</p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p> After taking measurements of the Hub’s environment, the allowable range of robot specifications is summarised below: </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <video-component tag="amr" source="https://www.youtube.com/embed/yndlQdHEPAQ?si=I9WX-XjPPcxr8RCi"
+          subtitle="Video: Robot Frame Walkthrough"></video-component>
+          <!-- This is an example of how you might use the table component -->
+      </div>
+
+      <div id="F_322">
+        <h3>3.2.2 System Constraints </h3>
+        <p>
+          1. Payload Capacity and Stability Constraints:
+        </p>
+        <p>
+          The AMR’s payload limit and stability requirements significantly influences the mechanical design. Figure 23 shows the main payloads on the AMR.
+        </p>
+        <p>
+          The AMR has a payload capacity of 100kg. After deducting the weight of the payloads in figure 23, 40.9 kg capacity remains. This limited allowance requires the structure to be designed as lightweight as possible to accommodate for contingencies. 
+        </p>
+        <p>
+          Apart from that, the overall CG of payloads must remain within the AMR's designated limits, as illustrated in figure 24 below. To achieve a centralized CG, our components must be arranged in such a way that the weights distributed across the AMR are as even as possible. This is challenging due to the significant variation in payload weights and the need to optimise the AMR’s limited space.
         </p>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+        <p>
+          2. Functional requirements of robot: 
+        </p>
+        <p>
+          To support the robot’s intended operations, the mechanical structure must accommodate the following features as shown in the figure below. 
+        </p>
+        <p>
+          Integrating these functional needs poses a space optimization challenge as there is limited space available on the AMR.  
+        </p>
+        
+        <p>The figure below shows the 4 main controller orientations explored:</p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p>Based on these orientations, 5 iterations were drafted: </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p>To decide the best design, these iterations were screened through a selection matrix as shown in figure 28. The definitions of the evaluation criteria are as stated in figure 29. To understand the rationale behind the selection process in details, refer to Appendix D2. 
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p>From the concept selection matrix, we see that iteration 5 is the best performing configuration. Thus, it will be the chosen design for further development.   
+        </p>
       </div>
+
+      <div id="F_33">
+        <h3>3.3. Payload configuration concept screening</h3>
+        <p>
+          With the design constraints established, the next portion of the design process involved identifying the optimal payload configuration on the AMR. To do this systematically, the largest and most restrictive component- the controller- was positioned first to define the primary boundaries, after which smaller components were arranged around it. 
+        </p>
+        <p>
+          The figure below shows the 4 main controller orientations explored:
+        </p>
+        <p>
+          Based on these orientations, 5 iterations were drafted: 
+        </p>
+        <p>
+          To decide the best design, these iterations were screened through a selection matrix as shown in figure 28. The definitions of the evaluation criteria are as stated in figure 29. To understand the rationale behind the selection process in details, refer to Appendix D1.  
+        </p>
+        <p>
+          From the concept selection matrix, we see that iteration 5 is the best performing configuration. Thus, it will be the chosen design for further development.   
+        </p>
+      </div>
+
+      <div id="F_34">
+        <h3>3.4 Chosen Design </h3>
+        <p>
+          With the chosen payload configuration in section 3.2, we went on to design the details of the full robot as seen below.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p>
+          Figure 31 shows some general dimensions of the robot, all which comply with the constraints mentioned in section 3.1.1.1. As shown, the robot can reach both the top and bottom of the tool board. Its width also remains within the maximum allowable 780 mm.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+      </div>
+
+      <div id="F_35">
+        <h3>3.5 Features of Design</h3>
+      </div>
+
+      <div id="F_351">
+        <h3>3.5.1 Frame of robot</h3>
+        <p>
+          The frame of the robot is made of 3030 Aluminium profiles which are bolted onto the AMR surface at 8 points. We tried to use as little profiles as possible for a lightweight structure.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+        <p>
+          Unchosen frame Design:
+        </p>
+        <p>
+          The figure below shows a previous frame iteration. This design wasn’t selected as it required more profiles, particularly at the base (highlighted in red in the figure) where it mounts to the AMR. Using more profiles increases tolerance accumulation, making assembly more difficult and raises the risk of structural misalignment. Additionally, this design requires more bolt points. Thus, it wasn't used.
+        </p>
+      </div>
+
+      <div id="F_352">
+        <h3>3.5.2 Adaptable Frame Design</h3>
+        <p>
+          For contingency reasons, the frame is designed such that more profiles can be easily added in to support the Cobot if needed, without needing to redesign the whole frame.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+      </div>
+
+      <div id="F_353">
+        <h3>3.5.3 Adjustable Cobot position</h3>
+        <p>
+          The Cobot is adjustable along it’s z axis for 2 purposes: To make space for future accessories and to allow easy re-adjustments to the robot’s CG if needed.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+      </div>
+
+      <div id="F_354">
+        <h3>3.5.4 Electronics segregation - Control and Power panel</h3>
+        <p>
+          There are 2 electronics panels on the robot-Control and power panel. The control panel holds components such as the PC and network switch, while the power panel holds components such as voltage regulators and power distributors. Separating power and control components simplifies troubleshooting and minimizes electrical noise interference.
+        </p>
+        <p>
+          The vertical, large panel design also provides ample space for future electronic expansion and very easy access to components. 
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+      </div>
+
+      <div id="F_355">
+        <h3>3.5.5 Component mounting and wire management</h3>
+        <p>
+          DIN rails were used to enable convenient rearrangement and replacement of components while cable trunking laid in a grid manner makes wire management easy.
+        </p>
+        <p>
+          Additionally, spaces at the top and bottom of the panel are intentionally left for wires to pass through, as shown below.
+        </p>
+        <image-component size="medium" tag="image" source="assets/null.png"
+          subtitle="Placeholder"></image-component>
+      </div>
+
+      <div id="F_36">
+        <h3>3.6 Structure analysis</h3>
+      </div>
+
+      <div id="F_361">
+        <h3>3.6.1 Current AMR payload weight</h3>
+        <p>
+          As of the current design (excluding the external cover, tool changer unit, and basket), the total payload weight on the AMR is 81.72 kg. Considering a ±5% tolerance, it would be 77.63kg-85.81 kg. To improve accuracy, the actual material properties of heavier components were measured and applied in SolidWorks (See Appendix D2).
+        </p>
+      </div>
+
+      <div id="F_362">
+        <h3>3.6.2 Stability analysis</h3>
+        <p>
+          As mentioned in Section 3.2.2, the AMR has defined boundaries that indicate the permissible CG range for its payload. To ensure our design meet this requirement, CG analysis was conducted at three arm positions: Default, fully forward, and fully sideways. In all cases, the CG remained within the allowable limits.
+        </p>
+        <p>
+          The stability test of the assembled robot was also found to be consistent with our analysis results. 
+        </p>
+      </div>
+
+      <div id="F_363">
+        <h3>3.6.3 Structural strength analysis</h3>
+        <p>
+          Static simulation was done to ensure that the frame and Cobot mounting plate is strong enough to withstand the heavy weight of the Cobot. From the figure below, we can see that the structure is well below it’s yield strength. Explanation for how analysis was done can be found in Appendix D3. Apart from yield strength, we also analysed other aspects such as Factor of safety and Resultant displacement. See Appendix D4 for more information.
+        </p>
+        <p>
+          As the robot is stable at its extreme arm positions in the CG analysis, and static loading tests indicate the structure is strong, we know that it will also remain stable under dynamic conditions, particularly since both the Cobot and AMR will be operated at conservative speeds for safety reasons.
+        </p>
+      </div>
+
     </div>
 
     <br />
@@ -581,7 +744,9 @@
       <div id="EE-431">
         <h4>4.3.1 Design challenges</h4>
         <p>
-          Between the various tools, the clamping interface must securely hold varying non-linear surfaces, with material contact surfaces varying across tools (plastic, rubber, steel), each having a different coefficient of friction which impacts the clamping force.
+          Between the various tools, the clamping interface must securely hold varying non-linear surfaces, with material contact surfaces varying across tools (plastic, rubber, steel), each having a different coefficient of friction which impacts the clamping force. Misalignment during gripping is also a concern, as the robot may not always approach the tool at an ideal angle due to positional inaccuracies. The gripper must accommodate these misalignments without dropping the tool.
+          <image-component size="small" tag="image" source="assets/endeffector/robotdeviat.png"
+          subtitle="Fig 4: Misalignment due to AMR inaccuracy"></image-component>
         </p>
       </div>
 
@@ -605,7 +770,7 @@
           Based on the metric scoring, the rack and pinion and lead screw approach were both chosen to further prototype and explore.
         </p>
         <p>
-          To avoid excessive contact forces onto a singular contact point, the team decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
+          To account for misalignment and excessive contact pressure on non-linear surfaces, I decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
         </p> 
         <image-component size = "medium" tag="image" source="assets/finray.png"
           subtitle="Fig 4: Example of the fin ray gripper finger from Festo"></image-component>   
@@ -642,11 +807,15 @@
         </p>
         <image-component tag="image" source="assets/PrototypeGrip.png"
           subtitle="Figure : Prototype Gripper to test concept"></image-component>
+        <image-component tag="image" source="assets/endeffector/gripperopen.gif"
+          subtitle="Figure : Prototype Gripper functionality"></image-component>
         <image-component tag="image" source="assets/protoexploded.png"
           subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
         <p>
           Since this is a prototype, I designed it with parts that facilitate easy swapping of finger geometries to test clamping force. Initial tests showed favourable results in carrying objects up to 900g. Further test will be conducted to validate different gripper profiles and geometries.
         </p>
+        <image-component size = "small" tag="image" source="assets/endeffector/grippertesting.gif"
+          subtitle="Figure : Prototype Gripper functionality"></image-component>
       </div>
 
       <div id="EE-472">
@@ -670,41 +839,34 @@
     <sl-divider></sl-divider>
     <div>
       <div id="ES-5">
-        <h2>5. Electrical Subsystem - Electrical Integration</h2>
+        <h2>5. Electrical Subsystem - Electrical Integration (Fang Chen)</h2>
         <p>
           The scope of this subsystem is to design and implement the circuitry used to integrate AMR and Cobot together.
         </p>
       </div>
 
       <div id="ES-51">
-        <h3>5.1. Sub-section Header 1</h3>
+        <h3>5.1. AMR and Cobot integrated circuit</h3>
         <p>
-          Pellentesque nec nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
-          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
-          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
-          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
-          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          The system load can be classified into 2 categories: peripheral devices (PC, router, etc.) and the Cobot controller.<a href="#image">Link to the image above</a>
         </p>
-
+        <p>
+          Ideally, all electronics would be powered directly from the AMR. However, the controller requires up to 1 kVA during continuous operation, while the AMR can only supply 960W (48V, 20A max), which is insufficient. To address this, a 72 V battery with a capacity of 1152 Wh was introduced.
+        </p>
+        <p>
+          Figure 48 shows the initial circuit design, where all loads were powered solely by the battery. This configuration was later revised as the battery runtime is limited. To extend system operating time and optimize power usage, the peripheral devices were powered by the AMR instead, reducing the load on the battery. The finalized circuit design is shown in Figure 49.
+        </p>
+        <p>
+          In the final circuit, the AMR’s 48 V is stepped down to 5 V, 9 V, 12 V, and 24 V to power the peripheral devices. Since the controller operates on AC power, the 72 VDC from the battery is converted to AC through a power inverter. Battery runtime calculation comparing initial and final circuit design is in Appendix F1.
+        </p>
         <!-- This is an example of how you might use the video component -->
       </div>
 
       <div id="ES-52">
-        <h3>5.2. Sub-section Header 2</h3>
+        <h3>5.2. Centralised E-stop system</h3>
         <p>
-          Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Dignissim convallis aenean et tortor at
-          risus viverra adipiscing. Facilisi nullam vehicula ipsum a arcu cursus. Adipiscing elit pellentesque
-          habitant
-          morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
-          sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
-          placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+          Currently, both systems have separate E-stop circuits. A centralized E-stop system is required to ensure that pressing the E-stop sends a signal to both systems simultaneously, triggering their respective shutdown sequences. This will be implemented using a relay as shown below.
         </p>
-
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
       </div>
     </div>
 
@@ -719,45 +881,44 @@
       <div id="SS-61">
         <h3>6.1. Software Strategy</h3>
         <p>
-          To ensure completion of the 3 main tasks assignment, an understanding must be done on how the stakeholders would interact with the system and get it to completion.
+          To ensure completion of the 3 main tasks assigned, an understanding must be done on how the stakeholders would interact with the system and make it perform the desired tasks.
         </p>
         <p>
           A user sequence diagram was created to showcase the generic workflow of the system by the user. 
         </p>
+        
         <image-component tag="image" source="assets/userseqdiagram.png"
           subtitle="Figure x: User Sequence Diagram"></image-component>
-
-        <p>
-          The Robot Software System consists of:
-        </p>
-        <p>
-          -	AMR to Arm Communication
-        </p>
-        <p>
-          -	Task planning and motion control
-        </p>
-        <p>
-          -	Manipulator firmware and control
-        </p>
-        <p>
-          The Robot Hardware System consists of:
-        </p>
-        <p>
-          -	AMR
-        </p>
-        <p>
-          -	Cobot
-        </p>
-        <p>
-          -	End Effector System
-        </p>
+        
         <p>
           A robot sequence diagram was also created to show the motions of the robot upon receiving a command. 
         </p>
-        <image-component tag="image" source="assets/roboseq.png"
+        <image-component size = "large" tag="image" source="assets/roboseq.png"
           subtitle="Figure x: Robot Sequence Diagram"></image-component>
-
         
+          <p>
+          Sofware Subsystem Overview:
+        </p>
+        <image-component tag="image" source="assets/software/softsub.png"
+          subtitle="Figure x: Software Subsystems to develop"></image-component>
+      </div>
+
+      <div id="SS-611">
+        <h3>6.1.1 Software Sequence for Task 1</h3>
+        <p>
+          For the system to complete Task 1, a detailed sequence flowchart was created to show the software flow of the system from receiving a command from the user to completing the task.
+        </p>
+        <image-component size="small" tag="image" source="assets/software/Task Process flow chart.drawio.svg"
+          subtitle="Figure x: Task 1 Software Sequence Flowchart"></image-component>
+      </div>
+
+      <div id="SS-612">
+        <h3>6.1.2 Software Sequence for Task 2</h3>
+        <p>
+          For the system to complete Task 2, a detailed sequence flowchart was created to show the software flow of the system from receiving a command from the user to completing the task.
+        </p>
+        <image-component size="small" tag="image" source="assets/software/Task 2 Process flow chart.drawio.svg"
+          subtitle="Figure x: Task 2 Software Sequence Flowchart"></image-component>
       </div>
 
       <div id="SS-62">
@@ -774,8 +935,8 @@
         <p>
           A software container diagram using the C4 model notation was used to show the communication between nodes to create the Robot Software System.
         </p>
-        <image-component tag="image" source="assets/C4 Container Diagram.png"
-          subtitle="Figure x: Container Diagram showing robot software system"></image-component>
+        <image-component tag="image" source="assets/C4 Model Diagram.drawio.svg"
+          subtitle="Figure x: Container Diagram showing robot software system (Open image in new tab to see in detail)"></image-component>
       </div>
 
       <div id="SS-631">
@@ -809,7 +970,7 @@
       <div id="SS-633">
         <h4>6.3.3 Waypoint finding</h4>
         <p>
-          For the AMR to reach a desired waypoint, an API call to the Waypoints API will allow for requesting a specific goal point for the robot to travel too that can also be saved via another API call to the Goal API.
+          For the AMR to reach a desired waypoint, an API call to the Waypoints API will allow for requesting a specific goal point for the robot to travel too that can also be saved via another API call to the Goal API. A map of the Hub environment was created via SLAM mapping to allow the AMR to localise itself and plan a path to the desired waypoint.
         </p>
         <video-component tag="amr" source="https://www.youtube.com/embed/yUhf1zvPS7Y?si=vLAjFvF9QwQqjgCw"
           subtitle="Video: AMR Waypoint Testing"></video-component>
@@ -900,6 +1061,7 @@
       <p>
       This appendix is dedicated to the Cobot, Mitsubishi Electric RV5-AS, Specifications and Information.
       </p>
+      <div id="A1" class="A1"></div>
       <h3>
       A1
       </h3>
@@ -1031,6 +1193,21 @@
       <p>
       This appendix is dedicated to the Software Subsystem.
       </p>
+      <h3>
+       G1
+      </h3>
+      <image-component size="large" tag="image" source="assets/software/sestofleet.png"
+          subtitle="Sesto Fleet Management Software"></image-component>
+      <h3>
+       G2
+      </h3>
+      <image-component size="large" tag="image" source="assets/software/rttoolbox3.png"
+          subtitle="RT Toolbox 3 Software"></image-component>
+      <h3>
+       G3
+      </h3>
+      <image-component size="large" tag="image" source="assets/rqtgraph.png"
+          subtitle="RQT Graph of Software"></image-component>
     </div>
 
   </div>
