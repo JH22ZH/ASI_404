@@ -126,12 +126,54 @@
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#PA_3">3. Mechanical Subsystem - Frame (Fang Chen)</a>
+          <a href="#F_3">3. Mechanical Subsystem - Robot Structure (Fang Chen)</a>
           <sl-tree-item>
-            <a href="#PA_31">3.1. Placeholder</a>
+            <a href="#F_31">3.1. Design Pre-Evaluation</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#PA_32">3.2. Placeholder 2</a>
+            <a href="#F_32">3.2. Design constraints</a>
+            <sl-tree-item>
+            <a href="#F_32">3.2.1 Environmental constraints</a>
+            </sl-tree-item>
+            <sl-tree-item>
+            <a href="#F_32">3.2.2 System constraints</a>
+            </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#F_33">3.3. Payload configuration concept screening</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#F_34">3.4. Chosen Design</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#F_35">3.5. Features of Design</a>
+             <sl-tree-item>
+            <a href="#F_351">3.5.1. Frame of robot</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_352">3.5.2. Adaptable Frame Design</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_353">3.5.3. Adjustable Cobot position</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_354">3.5.4. Electronics segregation - Control and Power panel</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_355">3.5.5. Component mounting and wire management</a>
+             </sl-tree-item>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#F_36">3.6. Structure analysis</a>
+            <sl-tree-item>
+              <a href="#F_361">3.6.1. Current AMR payload weight</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_362">3.6.2. Stability analysis</a>
+             </sl-tree-item>
+             <sl-tree-item>
+              <a href="#F_363">3.6.3. Structural strength analysis</a>
+             </sl-tree-item>
           </sl-tree-item>
         </sl-tree-item>
 
@@ -170,12 +212,12 @@
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#PA_3">5. Electrical Subsystem - AMR and Cobot Integration (Fang Chen)</a>
+          <a href="#ES-5">5. Electrical Subsystem - AMR and Cobot Integration (Fang Chen)</a>
           <sl-tree-item>
-            <a href="#PA_31">3.1. Placeholder</a>
+            <a href="#ES_51">5.1. AMR and Cobot integrated circuit</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#PA_32">3.2. Placeholder 2</a>
+            <a href="#ES_52">5.2. Centralised E-stop system</a>
           </sl-tree-item>
         </sl-tree-item>
 
@@ -183,6 +225,12 @@
           <a href="#SS-6">6. Software Subsystem (Jason)</a>
           <sl-tree-item>
             <a href="#SS-61">6.1 Software Strategy</a>
+            <sl-tree-item>
+            <a href="#SS-611">6.1.1 Software Sequence for Task 1</a>
+            </sl-tree-item>
+            <sl-tree-item>
+            <a href="#SS-612">6.1.2 Software Sequence for Task 2</a>
+            </sl-tree-item>
           </sl-tree-item>
           <sl-tree-item>
             <a href="#SS-62">6.2 AMR to Cobot Communication</a>
@@ -492,8 +540,8 @@
         <p>
           Some key specifications influencing our design are shown in the figure below. Refer to Appendix A for detailed information. <a href="#Appendix_A">Link to Appendix A</a>
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.1 fig 20.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.1 fig 20.png"
+          subtitle="Fig 20: Key specifications of the AMR and Cobot"></image-component>
       </div>
 
       <div id="F_32">
@@ -512,13 +560,12 @@
         <p> The structure must position the Cobot at a suitable height so that its full 910 mm reach can access both the top and bottom sections of the pegboard, as well as the worktable surface as shown in figure 21.</p>
         <p> 2. Width Constraints:</p>
         <p> The robot’s overall footprint must fit within the aisle and workspace clearances shown in figure 21 to allow smooth navigation in the Hub.</p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.2.1 Fig 21.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.2.1 Fig 21.png"
+          subtitle="Fig 21: Environmental constraints of the Hub"></image-component>
         <p> After taking measurements of the Hub’s environment, the allowable range of robot specifications is summarised below: </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.2.1 Fig 22.png"
-          subtitle="Placeholder"></image-component>
-        <video-component tag="amr" source="https://www.youtube.com/embed/yndlQdHEPAQ?si=I9WX-XjPPcxr8RCi"
-          subtitle="Video: Robot Frame Walkthrough"></video-component>
+          subtitle="Fig 22: Allowable robot specifications. Note: Robot Max length isn’t included as width is the limiting factor during navigation"></image-component>
+        
           <!-- This is an example of how you might use the table component -->
       </div>
 
@@ -530,16 +577,16 @@
         <p>
           The AMR’s payload limit and stability requirements significantly influences the mechanical design. Figure 23 shows the main payloads on the AMR.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.2.2 Fig 23.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.2.2 Fig 23.png"
+          subtitle="Fig 23: Main payloads of AMR and their Weights"></image-component>
         <p>
           The AMR has a payload capacity of 100kg. After deducting the weight of the payloads in figure 23, 40.9 kg capacity remains. This limited allowance requires the structure to be designed as lightweight as possible to accommodate for contingencies. 
         </p>
         <p>
           Apart from that, the overall CG of payloads must remain within the AMR's designated limits, as illustrated in figure 24 below. To achieve a centralized CG, our components must be arranged in such a way that the weights distributed across the AMR are as even as possible. This is challenging due to the significant variation in payload weights and the need to optimise the AMR’s limited space.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.2.2 fig 24.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="small" tag="image" source="assets/fc/sec 3.2.2 fig 24.png"
+          subtitle="Fig 24: Permissible CG of payload on AMR"></image-component>
 
         <p>
           2. Functional requirements of robot: 
@@ -548,7 +595,7 @@
           To support the robot’s intended operations, the mechanical structure must accommodate the following features as shown in the figure below. 
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.2.2 fig25.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 25: List of Functional Requirements Robot structure must have"></image-component>
         <p>
           Integrating these functional needs poses a space optimization challenge as there is limited space available on the AMR.  
         </p>
@@ -562,20 +609,20 @@
         <p>
           The figure below shows the 4 main controller orientations explored:
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.3 fig 26.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.3 fig 26.png"
+          subtitle="Fig 26: Controller orientations explored for design iterations"></image-component>
         <p>
           Based on these orientations, 5 iterations were drafted: 
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.3 Fig 27.png"
-          subtitle="Placeholder"></image-component>
+        <image-component tag="image" source="assets/fc/sec 3.3 Fig 27.png"
+          subtitle="Fig 27: Iterations of payload configurations"></image-component>
         <p>
           To decide the best design, these iterations were screened through a selection matrix as shown in figure 28. The definitions of the evaluation criteria are as stated in figure 29. To understand the rationale behind the selection process in details, refer to Appendix D1.  
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.3 fig 28.png"
-          subtitle="Placeholder"></image-component>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.3 Fig 29.png"
-          subtitle="Placeholder"></image-component>
+        <image-component  tag="image" source="assets/fc/sec 3.3 fig 28.png"
+          subtitle="Fig 28: Concept selection matrix"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.3 Fig 29.png"
+          subtitle="Fig 29: Criterion used in selection matrix to evaluate design iterations"></image-component>
         <p>
           From the concept selection matrix, we see that iteration 5 is the best performing configuration. Thus, it will be the chosen design for further development.   
         </p>
@@ -587,14 +634,14 @@
           With the chosen payload configuration in section 3.3, we went on to design the details of the full robot as seen below.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.4 fig 30.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 30: Chosen design of Robot"></image-component>
         <p>
           Figure 31 shows some general dimensions of the robot, all which comply with the constraints mentioned in section 3.1.1.1. As shown, the robot can reach both the top and bottom of the tool board. Its width also remains within the maximum allowable 780 mm.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.4 fig 31.png"
-          subtitle="Placeholder"></image-component>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.4 fig 32.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="small" tag="image" source="assets/fc/sec 3.4 fig 31.png"
+          subtitle="Fig 31: General Dimensions of Robot"></image-component>
+        <image-component  tag="image" source="assets/fc/sec 3.4 fig 32.png"
+          subtitle="Fig 32: Cobot flange is able to reach required heights"></image-component>
       </div>
 
       <div id="F_35">
@@ -607,7 +654,7 @@
           The frame of the robot is made of 3030 Aluminium profiles which are bolted onto the AMR surface at 8 points. We tried to use as little profiles as possible for a lightweight structure.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.1 fig 33.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 33: How robot frame is mounted onto AMR"></image-component>
         <p>
           Unchosen frame Design:
         </p>
@@ -615,7 +662,7 @@
           The figure below shows a previous frame iteration. This design wasn’t selected as it required more profiles, particularly at the base (highlighted in red in the figure) where it mounts to the AMR. Using more profiles increases tolerance accumulation, making assembly more difficult and raises the risk of structural misalignment. Additionally, this design requires more bolt points. Thus, it wasn't used.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.1 fig 34.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 34: Comparison between the chosen frame and an unchosen iteration"></image-component>
       </div>
 
       <div id="F_352">
@@ -623,8 +670,8 @@
         <p>
           For contingency reasons, the frame is designed such that more profiles can be easily added in to support the Cobot if needed, without needing to redesign the whole frame.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.5.2 fig 35.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="small" tag="image" source="assets/fc/sec 3.5.2 fig 35.png"
+          subtitle="Fig 35: Additional supports can easily be added into frame"></image-component>
       </div>
 
       <div id="F_353">
@@ -633,7 +680,7 @@
           The Cobot is adjustable along it’s z axis for 2 purposes: To make space for future accessories and to allow easy re-adjustments to the robot’s CG if needed.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.3 fig 36.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 36: Cobot position is adjustable along Z axis"></image-component>
       </div>
 
       <div id="F_354">
@@ -645,7 +692,7 @@
           The vertical, large panel design also provides ample space for future electronic expansion and very easy access to components. 
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.4 fig 37.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 37: The 2 types of electronic panels on the Robot"></image-component>
       </div>
 
       <div id="F_355">
@@ -654,12 +701,12 @@
           DIN rails were used to enable convenient rearrangement and replacement of components while cable trunking laid in a grid manner makes wire management easy.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.5 fig 38.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 38: DIN rails and cable trunks were used to achieve neat layout"></image-component>
         <p>
           Additionally, spaces at the top and bottom of the panel are intentionally left for wires to pass through, as shown below.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.5.5 fig 39.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 39: Cable routing paths for electronics"></image-component>
       </div>
 
       <div id="F_36">
@@ -672,7 +719,7 @@
           As of the current design (excluding the external cover, tool changer unit, and basket), the total payload weight on the AMR is 81.72 kg. Considering a ±5% tolerance, it would be 77.63kg-85.81 kg. To improve accuracy, the actual material properties of heavier components were measured and applied in SolidWorks (See Appendix D2).
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.6.1 fig 40.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 40: Structure Mass"></image-component>
       </div>
 
       <div id="F_362">
@@ -680,13 +727,13 @@
         <p>
           As mentioned in Section 3.2.2, the AMR has defined boundaries that indicate the permissible CG range for its payload. To ensure our design meet this requirement, CG analysis was conducted at three arm positions: Default, fully forward, and fully sideways. In all cases, the CG remained within the allowable limits.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.6.2 fig 41.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.6.2 fig 41.png"
+          subtitle="Fig 41: CG (circled in orange), are within permissible boundaries for all 3 arm positions"></image-component>
         <p>
           The stability test of the assembled robot was also found to be consistent with our analysis results. 
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.6.2 fig 42.png"
-          subtitle="Placeholder"></image-component>
+        <image-component size="large" tag="image" source="assets/fc/sec 3.6.2 fig 42.png"
+          subtitle="Fig 42: Tipping test on actual robot"></image-component>
       </div>
 
       <div id="F_363">
@@ -695,10 +742,12 @@
           Static simulation was done to ensure that the frame and Cobot mounting plate is strong enough to withstand the heavy weight of the Cobot. From the figure below, we can see that the structure is well below it’s yield strength. Explanation for how analysis was done can be found in Appendix D3. Apart from yield strength, we also analysed other aspects such as Factor of safety and Resultant displacement. See Appendix D4 for more information.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.6.3 fig 43.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Figure 43: Yield strength analysis performed on frame in SolidWorks"></image-component>
         <p>
           As the robot is stable at its extreme arm positions in the CG analysis, and static loading tests indicate the structure is strong, we know that it will also remain stable under dynamic conditions, particularly since both the Cobot and AMR will be operated at conservative speeds for safety reasons.
         </p>
+        <video-component tag="amr" source="https://www.youtube.com/embed/yndlQdHEPAQ?si=I9WX-XjPPcxr8RCi"
+          subtitle="Video: Robot Frame Walkthrough"></video-component>
       </div>
 
     </div>
@@ -720,7 +769,7 @@
           To narrow down the ideal Actuation mode for the system, we evaluated the main types of actuation methods against various criteria for the system through the Concept Screening technique. 
         </p>
         <image-component tag="image" source="assets/ActMode.png"
-          subtitle="Fig 4: Actuation mode concept screening"></image-component>
+          subtitle="Fig 44: Actuation mode concept screening"></image-component>
           <p>
           Based on the limitations of the payload of the AMR unit and space constraints within the body to fit all the components, the Hardware Requirements section was listed with higher weightage. Based on the concept screening and understanding of our system, we decided to choose the electric actuation mode for the design of the end-effector. 
         </p>
@@ -741,7 +790,7 @@
           Allocated space on the robot structure: 600mm x 135mm x 200mm
         </p>
         <image-component size="medium" tag="image" source="assets/manspace.png"
-          subtitle="Fig 4: Space allocated for End Effectors"></image-component>
+          subtitle="Fig 45: Space allocated for End Effectors"></image-component>
       </div>
       <div id="EE-43">
         <h3>4.3 End Effector Analysis (Task 1: Tool pick and place)</h3>
@@ -749,9 +798,9 @@
           Based on the task requirements specified, one of the end effectors would need to interact with the various tools specified on the pegboard. To get an understanding on the size and mass of the tools that the end effector must grab, the team measured and obtained the relevant data to fix our design requirements. 
         </p>
         <image-component tag="image" source="assets/collagetools.png"
-          subtitle="Fig 4: A collage showing the various types of tools that the system must interact with."></image-component>
+          subtitle="Fig 46: A collage showing the various types of tools that the system must interact with."></image-component>
         <image-component size="small" tag="image" source="assets/summdatapoints.png"
-          subtitle="Fig 4: Table showing the various data points of the manipulator."></image-component>
+          subtitle="Fig 47: Table showing the various data points of the manipulator."></image-component>
       </div>
 
       <div id="EE-431">
@@ -759,7 +808,7 @@
         <p>
           Between the various tools, the clamping interface must securely hold varying non-linear surfaces, with material contact surfaces varying across tools (plastic, rubber, steel), each having a different coefficient of friction which impacts the clamping force. Misalignment during gripping is also a concern, as the robot may not always approach the tool at an ideal angle due to positional inaccuracies. The gripper must accommodate these misalignments without dropping the tool.
           <image-component size="small" tag="image" source="assets/endeffector/robotdeviat.png"
-          subtitle="Fig 4: Misalignment due to AMR inaccuracy"></image-component>
+          subtitle="Fig 48: Misalignment due to AMR inaccuracy"></image-component>
         </p>
       </div>
 
@@ -769,7 +818,7 @@
           With the design constraints known, design specifications for both the gripper and tool changer unit are specified.
         </p>
         <image-component size="large" tag="image" source="assets/endeffds.png"
-          subtitle="Fig 4: End Effector design specifications"></image-component>
+          subtitle="Fig 49: End Effector design specifications"></image-component>
       </div>
 
       <div id="EE-45">
