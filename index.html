@@ -827,7 +827,7 @@
           To choose the ideal gripper mechanisms, the team used a concept screening chart to evaluate different designs against key metrics.
         </p>
         <image-component tag="image" source="assets/grippercc.png"
-          subtitle="Fig 4: Gripper concept selection"></image-component>
+          subtitle="Fig 50: Gripper concept selection"></image-component>
         <p>
           Based on the metric scoring, the rack and pinion and lead screw approach were both chosen to further prototype and explore.
         </p>
@@ -835,7 +835,7 @@
           To account for misalignment and excessive contact pressure on non-linear surfaces, I decided to investigate compliant gripper fingers. A common design used is the Festo Fin Ray gripper finger design. The Festo Fin Ray gripper uses a flexible, fin-like triangular skeleton with transverse ribs that passively bends around objects, so contact forces redirect into closing forces instead of peeling them away. This geometry gives gentle, adaptive gripping of irregular or fragile parts, high tolerance to misalignment, and simpler actuation/control compared with rigid parallel jaws.
         </p> 
         <image-component size = "medium" tag="image" source="assets/finray.png"
-          subtitle="Fig 4: Example of the fin ray gripper finger from Festo"></image-component>   
+          subtitle="Fig 51: Example of the fin ray gripper finger from Festo"></image-component>   
       </div>
 
       <div id="EE-46">
@@ -844,7 +844,7 @@
           As the system will be interacting with various tools, a singular gripper design may be unable to carry or support all types of objects. As a result, the team aims to implement a tool changing system onboard the Cobot to facilitate end-effector changes. Due to the actuation mode being limited to being electric, the team narrowed down 3 concepts that can be explored and evaluated those against metrics.
         </p>
         <image-component size = "large" tag="image" source="assets/toolcc.png"
-          subtitle="Fig 4: Tool Changer concept selection"></image-component>
+          subtitle="Fig 52: Tool Changer concept selection"></image-component>
         <p>
           Due to the limited space and mass constraints on the system, the Compactness/Weight criterion was weighted highly. Based on the scoring, the Permanent Electromagnet was chosen to be the concept to be explored further.
         </p>
@@ -863,21 +863,19 @@
           To test the Fin Ray design, an inspired gripper was designed and simulated it in SolidWorks via Nonlinear analysis, using TPU-85A as the material. The goal of the analysis was to locate the ideal gripping section that will allow the gripper to wrap around the object.
         </p>
         <image-component tag="image" source="assets/gripperdefor.png"
-          subtitle="Figure 17: Nonlinear Analysis of the deformation of a custom Fin-Ray Gripper Finger from TPU-85A (Deformation Scale: 1)"></image-component>
+          subtitle="Fig 53: Nonlinear Analysis of the deformation of a custom Fin-Ray Gripper Finger from TPU-85A (Deformation Scale: 1)"></image-component>
         <p>
           To test the Rack and Pinion concept with the Fin Ray gripper fingers, I built a 3D-printed prototype using PLA with TPU-85A for the fingers to test the deformation and gripping strength.
         </p>
         <image-component tag="image" source="assets/PrototypeGrip.png"
-          subtitle="Figure : Prototype Gripper to test concept"></image-component>
-        <image-component tag="image" source="assets/endeffector/null"
-          subtitle="Figure : Prototype Gripper functionality"></image-component>
+          subtitle="Fig 54: Prototype Gripper to test concept"></image-component>
+        <video-component tag="rv5as" source="https://www.youtube.com/embed/fclm4pnb_6M?si=5E44gjACVjbD-pGQ"
+          subtitle="Video: Cobot MoveIt2 testing with PILZ"></video-component>
         <image-component tag="image" source="assets/protoexploded.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Fig 55: Prototype Gripper Exploded View"></image-component>
         <p>
           Since this is a prototype, I designed it with parts that facilitate easy swapping of finger geometries to test clamping force. Initial tests showed favourable results in carrying objects up to 900g. Further test will be conducted to validate different gripper profiles and geometries.
         </p>
-        <image-component size = "small" tag="image" source="assets/endeffector/null"
-          subtitle="Figure : Prototype Gripper functionality"></image-component>
       </div>
 
       <div id="EE-472">
@@ -892,7 +890,7 @@
           Current tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
         </p>
         <image-component size="small" tag="image" source="assets/Magnet.png"
-          subtitle="Figure x: Electromagnet and steel"></image-component>
+          subtitle="Fig 56: Electromagnet and steel"></image-component>
       </div>
     </div>
 
@@ -919,9 +917,9 @@
           Figure 48 shows the initial circuit design, where all loads were powered solely by the battery. This configuration was later revised as the battery runtime is limited. To extend system operating time and optimize power usage, the peripheral devices were powered by the AMR instead, reducing the load on the battery. The finalized circuit design is shown in Figure 49.
         </p>
         <image-component  tag="image" source="assets/fc/sec 5.1 fig 48.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 57: Initial circuit design"></image-component>
           <image-component  tag="image" source="assets/fc/sec 5.1 figure 49.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 58: Final Circuit Design"></image-component>
         <p>
           In the final circuit, the AMR’s 48 V is stepped down to 5 V, 9 V, 12 V, and 24 V to power the peripheral devices. Since the controller operates on AC power, the 72 VDC from the battery is converted to AC through a power inverter. Battery runtime calculation comparing initial and final circuit design is in Appendix F1.
         </p>
@@ -934,7 +932,7 @@
           Currently, both systems have separate E-stop circuits. A centralized E-stop system is required to ensure that pressing the E-stop sends a signal to both systems simultaneously, triggering their respective shutdown sequences. This will be implemented using a relay as shown below.
         </p>
         <image-component  tag="image" source="assets/fc/sec 5.2 fig 50.png"
-          subtitle="Placeholder"></image-component>
+          subtitle="Fig 59: Centralised E-stop system implemented via relay"></image-component>
       </div>
     </div>
 
@@ -956,19 +954,19 @@
         </p>
         
         <image-component tag="image" source="assets/userseqdiagram.png"
-          subtitle="Figure x: User Sequence Diagram"></image-component>
+          subtitle="Fig 60: User Sequence Diagram"></image-component>
         
         <p>
           A robot sequence diagram was also created to show the motions of the robot upon receiving a command. 
         </p>
         <image-component size = "large" tag="image" source="assets/roboseq.png"
-          subtitle="Figure x: Robot Sequence Diagram"></image-component>
+          subtitle="Fig 61: Robot Sequence Diagram"></image-component>
         
           <p>
           Sofware Subsystem Overview:
         </p>
         <image-component tag="image" source="assets/software/softsub.png"
-          subtitle="Figure x: Software Subsystems to develop"></image-component>
+          subtitle="Fig 62: Software Subsystems to develop"></image-component>
       </div>
 
       <div id="SS-611">
@@ -977,7 +975,7 @@
           For the system to complete Task 1, a detailed sequence flowchart was created to show the software flow of the system from receiving a command from the user to completing the task.
         </p>
         <image-component size="small" tag="image" source="assets/software/Task Process flow chart.drawio.svg"
-          subtitle="Figure x: Task 1 Software Sequence Flowchart"></image-component>
+          subtitle="Fig 63: Task 1 Software Sequence Flowchart"></image-component>
       </div>
 
       <div id="SS-612">
@@ -985,8 +983,8 @@
         <p>
           For the system to complete Task 2, a detailed sequence flowchart was created to show the software flow of the system from receiving a command from the user to completing the task.
         </p>
-        <image-component size="small" tag="image" source="assets/software/Task 2 Process flow chart.drawio.svg"
-          subtitle="Figure x: Task 2 Software Sequence Flowchart"></image-component>
+        <image-component size="small" tag="image" source="assets/software/T2 PF Upd.svg"
+          subtitle="Fig 64: Task 2 Software Sequence Flowchart"></image-component>
       </div>
 
       <div id="SS-62">
@@ -1004,13 +1002,13 @@
           A software container diagram using the C4 model notation was used to show the communication between nodes to create the Robot Software System.
         </p>
         <image-component tag="image" source="assets/C4 Model Diagram.drawio.svg"
-          subtitle="Figure x: Container Diagram showing robot software system (Open image in new tab to see in detail)"></image-component>
+          subtitle="Fig 65: Container Diagram showing robot software system (Open image in new tab to see in detail)"></image-component>
       </div>
 
       <div id="SS-631">
         <h4>6.3.1 Safety Interfacing</h4>
         <image-component size = "medium" tag="image" source="assets/Safety Diagram for System.svg"
-          subtitle="Figure x: Safety Interfaces between the AMR and Cobot"></image-component>
+          subtitle="Fig 66: Safety Interfaces between the AMR and Cobot"></image-component>
         <p>
           Between the AMR and Cobot, there are several safety features in place to protect the user in the event of a collision. To add on to monitoring these peripherals, the software system will send movement commands only if the AMR is stationary and vice versa. A programmed protective bubble governed by an ellipsoid equation will be activated around the Cobot during operation to ensure incorrect trajectory calculations/movements will be terminated. 
         </p>
@@ -1025,7 +1023,7 @@
           Since developing a planner was not in the scope of the project, the team opted to use planners available in the MoveIt2 Library with ROS2 to fit the Cobot. There are different planners, each with their own advantages. 3 planners were chosen based on the Cobot ROS2 driver compatibility. These are OMPL (Open Motion Planning Library), CHOMP (Covariant Hamiltonian Optimization for Motion Planning) and PILZ (PILZ Industrial Motion Planner). We cross-compared the planners with our use case based on metrics seen in the table below.
         </p>
         <image-component tag="image" source="assets/plannerscoring.png"
-          subtitle="Figure x: Selection of ideal trajectory planner for Cobot"></image-component>
+          subtitle="Fig 67: Selection of ideal trajectory planner for Cobot"></image-component>
         <p>
           For scoring, we scored it from 1 – 3, with 3 being ideal. Due to the conditions that the robot system must interact with, planners with unpredictable behaviour or have probability-based planning were rated lower. Planners with high computational requirement were also rated low. PILZ ended up being the most ideal planner for our use case as it chooses the shortest path while following velocity constraints with high repeatability and predictability.  
         </p>
@@ -1053,7 +1051,7 @@
 
         <!-- This is an example of how you might use the table component -->
         <image-component size="small" tag="image" source="assets/manipfirm.png"
-          subtitle="Figure x: End Effector Proposed Control"></image-component>
+          subtitle="Fig 68: End Effector Proposed Control"></image-component>
       </div>
 
       <div id="SS-65">
@@ -1068,9 +1066,9 @@
           Our final GUI vision is a single, unified interface that controls both the Cobot and the AMR. Built for staff and makers, it enables task execution without any coding, using clear workflows and teach-by-demonstration tools. A dedicated teaching mode streamlines adding goals and waypoints, making everyday operation fast and intuitive.
         </p>
         <image-component size="large" tag="image" source="assets/Dashboard.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure 69: Prototype Gripper Exploded View"></image-component>
         <image-component size="large" tag="image" source="assets/Engineering UI.png"
-          subtitle="Figure x: Prototype Gripper Exploded View"></image-component>
+          subtitle="Figure 70: Prototype Gripper Exploded View"></image-component>
         <!-- This is an example of how you might use the video component -->
         <video-component tag="rv5as" source="https://www.youtube.com/embed/4XbvGf5GQhY?si=m-EPjrZX_p1QXRXx"
           subtitle="Video: RV5AS Pick and Place with GUI Control"></video-component>
@@ -1095,9 +1093,9 @@
         <p>
         </p>
         <image-component tag="image" source="assets/ganttchart.png"
-          subtitle="Figure x: Gantt Chart to show timeline of development"></image-component>
+          subtitle="Figure 71: Gantt Chart to show timeline of development"></image-component>
         <image-component tag="image" source="assets/fc/sec 7.1 Fig  56.png"
-          subtitle="Figure x: Gantt Chart to show timeline of development"></image-component>
+          subtitle="Figure 72: Gantt Chart to show timeline of development"></image-component>
       </div>
 
     </div>
