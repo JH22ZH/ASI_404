@@ -99,19 +99,19 @@
             <a href="#PA_26">2.6 Value Proposition</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#PA_27">2.7 Design Specifications</a>
-            <sl-tree-item>
-            <a href="#PA_271">2.7.1 Task 1: Tool Collection</a>
-            </sl-tree-item>
-            <sl-tree-item>
-            <a href="#PA_272">2.7.2 Task 2: Point - to - point delivery</a>
-            </sl-tree-item>
-            <sl-tree-item>
-            <a href="#PA_273">2.7.3 Task 3: User Interface</a>
-            </sl-tree-item>
+            <a href="#PA_27">2.7 Concept Development</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#PA_28">2.8 Concept Development</a>
+            <a href="#PA_28">2.8 Design Specifications</a>
+            <sl-tree-item>
+            <a href="#PA_281">2.8.1 Task 1: Tool Collection</a>
+            </sl-tree-item>
+            <sl-tree-item>
+            <a href="#PA_282">2.8.2 Task 2: Point - to - point delivery</a>
+            </sl-tree-item>
+            <sl-tree-item>
+            <a href="#PA_283">2.8.3 Task 3: User Interface</a>
+            </sl-tree-item>
           </sl-tree-item>
           <sl-tree-item>
             <a href="#PA_29">2.9 Subsystem Identification</a>
@@ -392,7 +392,7 @@
         <p>
           The project involves the Hub Technical Staff seen in Figure 6, How Yee Teng (primary) and Patrick Tan Shoong Chin (secondary), as well as the Hub Technical Assistants. To gather insights, data collection through surveys and observations helped the team to understand their roles and contributions as well as understanding what problems the staff faced on the ground. 
         </p>
-        <image-component size="large" tag="image" source="assets/idpstaff.png"
+        <image-component size="large" tag="image" source="assets/stafix.png"
           subtitle="Fig 6: IDP Staff Members"></image-component>
       </div>
 
@@ -458,7 +458,16 @@
       </div>
 
       <div id="PA_27">
-        <h3>2.7 Design Specifications</h3>
+        <h3>2.7 Concept Development</h3>
+        <image-component tag="image" source="assets/condev.png"
+          subtitle="Fig 12: Concept Development"></image-component>
+        <p>
+          In Figure 12, the team compared candidate concepts across hardware complexity, cost, scalability, and task fit. A traditional mobile manipulator emerged as best: it supports quick end-effector swaps, adapts well to the environment, and remains statically stable—even during power loss or emergencies.
+        </p>
+      </div>
+      
+      <div id="PA_28">
+        <h3>2.8 Design Specifications</h3>
         <p>
           Based on the derived problem statements and key problems identified by the staff, the design specifications were prepared. Given our limited manpower, budget of $1600 SGD and time for development of less than a year, we decided to scope down to 3 distinct tasks that the system must achieve that assists with the staff.
         </p>
@@ -473,39 +482,30 @@
         </p>
       </div>
 
-      <div id="PA_271">
-        <h4>2.7.1 Task 1: Tool Collection</h4>
+      <div id="PA_281">
+        <h4>2.8.1 Task 1: Tool Collection</h4>
         <image-component tag="image" source="assets/ploc.png"
-          subtitle="Fig 12: Location of Pegboard in the Hub"></image-component>
+          subtitle="Fig 13: Location of Pegboard in the Hub"></image-component>
         <p>
-          For task 1, the robot is to grab tools from the pegboard shown in Figure 12, put it into an onboard basket and deliver it to a table. End-effector system with tool changer capabilities enables picking tools of different geometries.
+          For task 1, the robot is to grab tools from the pegboard shown in Figure 13, put it into an onboard basket and deliver it to a table. End-effector system with tool changer capabilities enables picking tools of different geometries.
         </p>
       </div>
 
-      <div id="PA_272">
-        <h4>2.7.2 Task 2: Point - to - point delivery</h4>
+      <div id="PA_282">
+        <h4>2.8.2 Task 2: Point - to - point delivery</h4>
         <image-component tag="image" source="assets/delRoute.png"
-          subtitle="Fig 13: P2P Delivery Route"></image-component>
+          subtitle="Fig 14: P2P Delivery Route"></image-component>
         <p>
-          For task 2, the robot is to travel to the storeroom shown in Figure 13 where several components are located to return items that the students have borrowed throughout the day. The onboard basket can be detached from the system to return items as a set. 
+          For task 2, the robot is to travel to the storeroom shown in Figure 14 where several components are located to return items that the students have borrowed throughout the day. The onboard basket can be detached from the system to return items as a set. 
         </p>
       </div>
 
-      <div id="PA_273">
-        <h4>2.7.3 Task 3: User Interface</h4>
+      <div id="PA_283">
+        <h4>2.8.3 Task 3: User Interface</h4>
         <image-component tag="image" source="assets/task3.png"
-          subtitle="Fig 14: User sequence diagram of GUI"></image-component>
+          subtitle="Fig 15: User sequence diagram of GUI"></image-component>
         <p>
-          For task 3, for the staff to control and monitor signs onboard for the system to function, a user interface is to create that can link commands from the user to the relevant commands for the hardware to perform the task. A sequence diagram for the user interface is shown in Figure 14.
-        </p>
-      </div>
-
-      <div id="PA_28">
-        <h3>2.8 Concept Development</h3>
-        <image-component tag="image" source="assets/condev.png"
-          subtitle="Fig 15: Concept Development"></image-component>
-        <p>
-          In Figure 15, the team compared candidate concepts across hardware complexity, cost, scalability, and task fit. A traditional mobile manipulator emerged as best: it supports quick end-effector swaps, adapts well to the environment, and remains statically stable—even during power loss or emergencies.
+          For task 3, for the staff to control and monitor signs onboard for the system to function, a user interface is to create that can link commands from the user to the relevant commands for the hardware to perform the task. A sequence diagram for the user interface is shown in Figure 15.
         </p>
       </div>
 
@@ -633,7 +633,7 @@
         <image-component tag="image" source="assets/fc/sec 3.3 Fig 27.png"
           subtitle="Fig 27: Iterations of payload configurations"></image-component>
         <p>
-          To decide the best design, these iterations were screened through a selection matrix as shown in figure 28. The definitions of the evaluation criteria are as stated in figure 29. To understand the rationale behind the selection process in details, refer to Appendix D1.  
+          To decide the best design, these iterations were screened through a selection matrix as shown in figure 28. The definitions of the evaluation criteria are as stated in figure 29. To understand the rationale behind the selection process in details, refer to <a href="#Appendix_D">Appendix D1</a>.  
         </p>
         <image-component  tag="image" source="assets/fc/sec 3.3 fig 28.png"
           subtitle="Fig 28: Concept selection matrix"></image-component>
@@ -652,7 +652,7 @@
         <image-component size="medium" tag="image" source="assets/fc/sec 3.4 fig 30.png"
           subtitle="Fig 30: Chosen design of Robot"></image-component>
         <p>
-          Figure 31 shows some general dimensions of the robot, all which comply with the constraints mentioned in section 3.1.1.1. As shown, the robot can reach both the top and bottom of the tool board. Its width also remains within the maximum allowable 780 mm.
+          Figure 31 shows some general dimensions of the robot, all which comply with the constraints mentioned in section 3.2.1. As shown, the robot can reach both the top and bottom of the tool board. Its width also remains within the maximum allowable 780 mm.
         </p>
         <image-component size="small" tag="image" source="assets/fc/sec 3.4 fig 31.png"
           subtitle="Fig 31: General Dimensions of Robot"></image-component>
@@ -716,12 +716,12 @@
         <p>
           DIN rails were used to enable convenient rearrangement and replacement of components while cable trunking laid in a grid manner makes wire management easy.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.5.5 fig 38.png"
+        <image-component size="large" tag="image" source="assets/fc/sec 3.5.5 fig 38.png"
           subtitle="Fig 38: DIN rails and cable trunks were used to achieve neat layout"></image-component>
         <p>
           Additionally, spaces at the top and bottom of the panel are intentionally left for wires to pass through, as shown below.
         </p>
-        <image-component size="medium" tag="image" source="assets/fc/sec 3.5.5 fig 39.png"
+        <image-component size="large" tag="image" source="assets/fc/sec 3.5.5 fig 39.png"
           subtitle="Fig 39: Cable routing paths for electronics"></image-component>
         <p>
           Having described the robot’s features, the following video shows the current state of the assembled robot to provide clearer view of its physical construction.
@@ -737,7 +737,7 @@
       <div id="F_361">
         <h4>3.6.1 Current AMR payload weight</h4>
         <p>
-          As of the current design (excluding the external cover, tool changer unit, and basket), the total payload weight on the AMR is 81.72 kg. Considering a ±5% tolerance, it would be 77.63kg-85.81 kg. To improve accuracy, the actual material properties of heavier components were measured and applied in SolidWorks (See Appendix D2).
+          As of the current design (excluding the external cover, tool changer unit, and basket), the total payload weight on the AMR is 81.72 kg. Considering a ±5% tolerance, it would be 77.63kg-85.81 kg. To improve accuracy, the actual material properties of heavier components were measured and applied in SolidWorks (See <a href="#Appendix_D">Appendix D2</a>).
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.6.1 fig 40.png"
           subtitle="Fig 40: Structure Mass"></image-component>
@@ -760,7 +760,7 @@
       <div id="F_363">
         <h4>3.6.3 Structural strength analysis</h4>
         <p>
-          Static simulation was done to ensure that the frame and Cobot mounting plate is strong enough to withstand the heavy weight of the Cobot. From the figure below, we can see that the structure is well below it’s yield strength. Explanation for how analysis was done can be found in Appendix D3. Apart from yield strength, we also analysed other aspects such as Factor of safety. See Appendix D4 for more information.
+          Static simulation was done to ensure that the frame and Cobot mounting plate is strong enough to withstand the heavy weight of the Cobot. From the figure below, we can see that the structure is well below it’s yield strength. Explanation for how analysis was done can be found in <a href="#Appendix_D">Appendix D3</a>. Apart from yield strength, we also analysed other aspects such as Factor of safety. See <a href="#Appendix_D">Appendix D4</a> for more information.
         </p>
         <image-component size="medium" tag="image" source="assets/fc/sec 3.6.3 fig 43.png"
           subtitle="Figure 43: Yield strength analysis performed on frame in SolidWorks"></image-component>
@@ -876,7 +876,7 @@
       <div id="EE-471">
         <h4>4.7.1 Gripper</h4>
         <p>
-          Before analysis can be done, an approximate normal force acting on the gripper jaw was established at 10N based on supporting a load of 15N with rubber contact against metal at a coefficient of friction of 0.69. <a href="#Appendix_E">(Refer to Appendix E)</a>
+          Before analysis can be done, an approximate normal force acting on the gripper jaw was established at 10N based on supporting a load of 15N with rubber contact against metal at a coefficient of friction of 0.69. <a href="#Appendix_E">(Refer to Appendix E2 and E3)</a>
         </p>
         <p>
           To test the Fin Ray design, an inspired gripper was designed and simulated it in SolidWorks via Nonlinear analysis, using TPU-85A as the material. The goal of the analysis was to locate the ideal gripping section that will allow the gripper to wrap around the object as seen in Figure 53.
@@ -902,13 +902,13 @@
       <div id="EE-472">
         <h4>4.7.2 Tool Changer</h4>
         <p>
-          To test the permanent electromagnet concept, calculations were performed on the type of electromagnet used <a href="#Appendix_E">(Refer to Appendix E)</a>, the corresponding magnetic material to maximise the magnetic attraction between the magnet and electromagnet.
+          To test the permanent electromagnet concept, calculations<a href="#Appendix_E">(Refer to Appendix E7)</a>guided the selection of the magnet and target material to maximize holding force.
         </p>
         <p>
-          The electromagnet use was a permanent electromagnet with a 24V demagnetisation input with 30kg rated strength. For the magnetic material, S275 Ferritic Steel was chosen with 6mm thickness to maximise the magnetic field. (Figure 56)
+          The electromagnet used was a permanent electromagnet with a 24V demagnetisation (release) input with 30kg rated strength. For the magnetic material, S275 Ferritic Steel was chosen with 6mm thickness to improve flux and holding force. (Figure 56)
         </p>
         <p>
-          Current tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
+          Initial tests indicate that the magnet can sustain 10kgs of load for a sustained period. Future works into the next semester will focus on creating the tool changer system with the mechanical body and electrical connections.  
         </p>
         <image-component size="small" tag="image" source="assets/Magnet.png"
           subtitle="Fig 56: Electromagnet and steel"></image-component>
@@ -942,7 +942,7 @@
           <image-component  tag="image" source="assets/fc/sec 5.1 figure 49.png"
           subtitle="Fig 58: Final Circuit Design"></image-component>
         <p>
-          In the final circuit, the AMR’s 48 V is stepped down to 5 V, 9 V, 12 V, and 24 V to power the peripheral devices. Since the controller operates on AC power, the 72 VDC from the battery is converted to AC through a power inverter. This is the current circuitry on our robot. Additional loads such as tool changer, and other peripherals are to be incorporated later in the project. Battery runtime calculations comparing the initial and final circuit designs are provided in Appendix F1.
+          In the final circuit, the AMR’s 48 V is stepped down to 5 V, 9 V, 12 V, and 24 V to power the peripheral devices. Since the controller operates on AC power, the 72 VDC from the battery is converted to AC through a power inverter. This is the current circuitry on our robot. Additional loads such as tool changer, and other peripherals are to be incorporated later in the project. Battery runtime calculations comparing the initial and final circuit designs are provided in <a href="#Appendix_F">Appendix F1</a>
         </p>
         <!-- This is an example of how you might use the video component -->
       </div>
@@ -1212,12 +1212,15 @@
       <image-component size="large" tag="image" source="assets/cobot/cobotspec2.png"
           subtitle="RV5_AS Specifications 2"></image-component>
       <h3>
-
       A4
       </h3>
       <image-component size="large" tag="image" source="assets/cobot/cobotspec2.png"
           subtitle="RV5_AS Torque Sensor Location"></image-component>
       <h3>
+      A5
+      </h3>
+      <image-component size="large" tag="image" source="assets/cobot/controller.png"
+          subtitle="CR 800D Robot Controller"></image-component>
     </div>
 
     <div id="Appendix_B" class="Appendix_B">
